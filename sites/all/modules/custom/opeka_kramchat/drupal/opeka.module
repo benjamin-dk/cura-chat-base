@@ -1,0 +1,116 @@
+<?php
+/**
+ * @file
+ * Drupal module for Opeka project.
+ *
+ * Provides user-facing and admin-targeted pages including the JavaScript
+ * needed for communication with nowjs.
+ */
+
+/**
+ * Implements hook_permission().
+ */
+function opeka_permission() {
+  return array(
+    'access opeka chat' => array(
+      'title' => t('Access the chat system'),
+      'description' => t('Grants a user normal access to the Opeka chat system.'),
+    ),
+    'administer opeka chat' => array(
+      'title' => t('Administer the chat system'),
+      'description' => t('Grants a user access to the admin backend of the Opeka chat system.'),
+    ),
+    'generate opeka chat ban codes' => array(
+      'title' => t('Generate opeka chat ban codes'),
+      'description' => t('Grants a user access to generate opeka chat ban codes.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function opeka_menu() {
+  $items = array();
+
+  $items['opeka'] = array(
+    'title' => 'Chat',
+    'page callback' => 'opeka_main_page',
+    'access arguments' => array('access opeka chat'),
+    'file' => 'opeka.pages.inc',
+  );
+
+  $items['admin/opeka'] = array(
+    'title' => 'Chat',
+    'page callback' => 'opeka_admin_page',
+    'access arguments' => array('administer opeka chat'),
+    'file' => 'opeka.admin.inc',
+  );
+
+  $items['admin/config/services/opeka'] = array(
+    'title' => 'Opeka - Chat system',
+    'description' => 'Provides settings for the chat service.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('opeka_admin_settings_form'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'opeka.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Load the JavaScript and CSS code required for the Opeka chat.
+ *
+ * @param array $stylesheets
+ *   Additional JavaScript files to load from our JS folder.
+ * @param array $scripts
+ *   Additional JavaScript files to load from our JS folder.
+ * @param array $settings
+ *   Additional settings to be exposed to JavaScript via the
+ *   Drupal.settings.object.
+ */
+function opeka_add_assets($stylesheets = array(), $scripts = array(), $settings = array()) {
+  $path = drupal_get_path('module', 'opeka');
+/*
+  $stylesheets = array_merge(array(
+    'opeka.base.css',
+    'opeka.theme.css',
+    'jquery.ui.theme.css',
+  ), $stylesheets);
+  foreach ($stylesheets as $filename) {
+    drupal_add_css($path . '/css/' . $filename);
+  }
+*/
+  $js_url = variable_get('opeka_nowjs_url', 'https://localhost:3000/nowjs/now.js');
+
+  if (!$js_url) {
+    $errormsg = t('Opeka web service URL missing.');
+    drupal_set_message($errormsg, 'error');
+    return $errormsg;
+  }
+
+  // Add the nowjs JavaScript file to the page. It will take care of
+  // connecting to the nowjs server.
+  drupal_add_js($js_url, array('type' => 'external', 'weight' => -42));
+
+  // Settings to expose to the JavaScript client.
+  $settings['path'] = base_path() . drupal_get_path('module', 'opeka');
+  drupal_add_js(array('opeka' => $settings), 'setting');
+
+  // Load the required JavaScript libraries.
+  drupal_add_library('system', 'ui.dialog');
+
+  // Add our default JavaScript files to the array.
+  $scripts = array_merge(array(
+    'underscore.js',
+    'backbone.js',
+    'opeka.common.js',
+    'opeka.models.js',
+    'opeka.views.js',
+  ), $scripts);
+
+  foreach ($scripts as $filename) {
+    drupal_add_js($path . '/js/' . $filename);
+  }
+}

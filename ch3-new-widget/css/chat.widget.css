@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+.outer-wrapper{
+  background: url('../img/grid_background.png') repeat-y;
+  font-family: 'Cabin';
+  min-height: 180px;
+  padding: 20px;
+  width: 225px;
+}
+
+.outer-wrapper .right{
+  float: right;
+}
+
+.outer-wrapper .title{
+  text-transform: uppercase;
+}
+
+.chat-content{
+  padding: 15px 0;
+}
+
+.chat-content ul{
+  margin: 0;
+  padding: 0;
+}
+
+.chat-content ul li{
+  background: url('../img/black_arrow.png') no-repeat 0;
+  height: 15px;
+  list-style: none;
+  padding: 5px 0 10px 20px; 
+}
+
+.chat-content .chat-name,
+.chat-content .chat-status{
+  display: inline-block;
+}
+
+.chat-content ul li:hover .open{
+  cursor: pointer;
+}
+
+.chat-content ul li a{
+  color: inherit;
+}
+
+.chat-content .chat-status{
+  float: right;
+  text-transform: uppercase;
+}
+
+.chat-content .chat-status.open{
+  color: green;
+}
+
+.chat-content .chat-status.busy{
+  color: orange;
+}
+
+.chat-content .chat-status.closed{
+  color: red;
+}
+
+.chat-content .opening-hours{
+  font-size: 12px;
+  font-style: italic;
+}
+.chat-content .opening-hours a{
+  color: orange;
+  text-decoration: none;
+}
+.chat-content .opening-hours a:hover{
+  text-decoration: underline;
+}

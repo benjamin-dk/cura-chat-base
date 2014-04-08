@@ -1,0 +1,9 @@
+#!/bin/bash
+# Script to stop the node server for the group chat
+# author: Daniel Mois
+
+ echo "Stopping the group chat forever";
+ date +"%A, %B %-d, %Y";
+
+ pkill node;
+ echo "The group chat has stopped now.";

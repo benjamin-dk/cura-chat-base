@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to start the node server for the group chat
+# author: Daniel Mois
+
+echo "Starting the Netstof group chat forever";
+ date +"%A, %B %-d, %Y";
+ cd /home/cyberhus/devel/opeka_kramchat/nodejs;
+ forever -a -l chat.log -e err.log -o out.log main.js &

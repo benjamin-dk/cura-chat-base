@@ -1,3 +1,7 @@
+# Ignore symlinked directories
+sites/all/modules/custom
+sites/all/themes/kram*
+
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 

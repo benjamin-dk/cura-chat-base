@@ -11,7 +11,7 @@
 Options -Indexes
 
 # Follow symbolic links in this directory.
-Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
 
 # Make Drupal handle any 404 errors.
 ErrorDocument 404 /index.php
@@ -55,6 +55,11 @@ DirectoryIndex index.php index.html index.htm
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
+
+  # Enforcing https
+  RewriteCond %{HTTP_HOST} ^kbh\.curachat\.com [NC]
+  RewriteCond %{SERVER_PORT} 80
+  RewriteRule ^(.*)$ https://kbh.curachat.com/$1 [R,L]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that

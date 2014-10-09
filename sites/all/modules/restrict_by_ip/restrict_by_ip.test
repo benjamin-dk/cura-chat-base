@@ -1,0 +1,346 @@
+<?php
+
+/**
+ * @File
+ * Tests the restrict_by_ip module.
+ */
+
+/**
+ * Test that IP restrictions work.
+ * Assumes that local testing environment has IP address of 127.0.0.1.
+ */
+class RestrictByIpLoginTests extends DrupalWebTestCase {
+  private $regularUser;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Restrict Login by IP Address',
+      'description' => 'Tests logins are restricted to certain IP address range(s).',
+      'group' => 'Restrict By IP',
+    );
+  }
+
+  public function setUp() {
+    // Enable modules needed for these tests.
+    parent::setUp('restrict_by_ip');
+
+    // Create a user that we'll use to test logins.
+    $this->regularUser = $this->drupalCreateUser();
+  }
+
+  // User can login when users IP matches global range.
+  public function testIpMatchGlobal() {
+    // Add global IP range.
+    variable_set('restrict_by_ip_login_range', '127.0.0.0/8');
+    $this->drupalLogin($this->regularUser);
+  }
+
+  // User disallowed login outside global range.
+  public function testIpDifferGlobal() {
+    // Add global IP range.
+    variable_set('restrict_by_ip_login_range', '10.0.0.0/8');
+    $this->assertNoLogin();
+  }
+
+  // User can login when users IP matchs users range.
+  public function testIpMatchUser() {
+    // Add in range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '127.0.0.0/8',
+    ));
+    $this->drupalLogin($this->regularUser);
+  }
+
+  // User disallowed login outside user range.
+  public function testIpDifferUser() {
+    // Add out of range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '10.0.0.0/8',
+    ));
+
+    $this->assertNoLogin();
+  }
+
+  // User disallowed login when users IP doesn't match global range but matches
+  // users range.
+  public function testIpDifferGlobalMatchUser() {
+    // Add out of range global IP.
+    variable_set('restrict_by_ip_login_range', '10.0.0.0/8');
+    // Add in range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '127.0.0.0/8',
+    ));
+
+    $this->assertNoLogin();
+  }
+
+  // User disallowed login when users IP doesn't match users range but matches
+  // global range.
+  public function testIpMatchGlobalDifferUser() {
+    // Add out of range global IP.
+    variable_set('restrict_by_ip_login_range', '127.0.0.0/8');
+    // Add in range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '10.0.0.0/8',
+    ));
+
+    $this->assertNoLogin();
+  }
+
+  // User disallowed login when users IP doesn't match global or users range.
+  public function testIpDifferGlobalDiffUser() {
+    // Add out of range global IP.
+    variable_set('restrict_by_ip_login_range', '10.0.0.0/8');
+    // Add in range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '10.0.0.0/8',
+    ));
+
+    $this->assertNoLogin();
+  }
+
+  // User can login when users IP matches global and users range.
+  public function testIpMatchGlobalMatchUser() {
+    // Add out of range global IP.
+    variable_set('restrict_by_ip_login_range', '127.0.0.0/8');
+    // Add in range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '127.0.0.0/8',
+    ));
+
+    $this->drupalLogin($this->regularUser);
+  }
+
+  // Assert user can't login.
+  private function assertNoLogin() {
+    $edit = array(
+      'name' => $this->regularUser->name,
+      'pass' => $this->regularUser->pass_raw
+    );
+    $this->drupalPost('user', $edit, t('Log in'));
+
+    $this->assertNoLink(t('Log out'), 0, t('User %name unsuccessfully logged in.', array('%name' => $this->regularUser->name)), t('User login'));
+  }
+}
+
+/**
+ * Test that role restrictions work.
+ * Assumes that local testing environment has IP address of 127.0.0.1.
+ */
+class RestrictByIpRoleTests extends DrupalWebTestCase {
+  private $regularUser;
+  private $role = array();
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Restrict Role by IP Address',
+      'description' => 'Tests roles are restricted to certain IP address range(s).',
+      'group' => 'Restrict By IP',
+    );
+  }
+
+  public function setUp() {
+    // Enable modules needed for these tests.
+    parent::setUp('restrict_by_ip');
+
+    // Create a user that we'll use to test logins.
+    $this->regularUser = $this->drupalCreateUser();
+
+    // Create a role with administer permissions so we can load the user edit,
+    // page and test if the user has this role when logged in.
+    $rid = $this->drupalCreateRole(array('administer permissions'));
+    $roles = user_roles();
+    $this->role['id'] = $rid;
+    $this->role['name'] = $roles[$rid];
+
+    // Add created role to user.
+    $new_roles = $this->regularUser->roles + array($rid => $roles[$rid]);
+    user_save($this->regularUser, array('roles' => $new_roles));
+  }
+
+  public function testRoleAppliedNoRestrictions() {
+    $this->drupalLogin($this->regularUser);
+    $this->drupalGet('user/' . $this->regularUser->uid . '/edit');
+    $this->assertText($this->role['name']);
+  }
+
+  public function testRoleAppliedMatchIP() {
+    variable_set('restrict_by_ip_role_' . $this->role['name'], '127.0.0.0/8');
+    $this->drupalLogin($this->regularUser);
+    $this->drupalGet('user/' . $this->regularUser->uid . '/edit');
+    $this->assertText($this->role['name']);
+  }
+
+  public function testRoleDeniedDifferIP() {
+    variable_set('restrict_by_ip_role_' . $this->role['name'], '10.0.0.0/8');
+    $this->drupalLogin($this->regularUser);
+    $this->drupalGet('user/' . $this->regularUser->uid . '/edit');
+    $this->assertNoText($this->role['name']);
+  }
+}
+
+/**
+ * Test that user is redirected to error page when login denied.
+ * Assumes that local testing environment has IP address of 127.0.0.1.
+ */
+class RestrictByIpRedirectTests extends DrupalWebTestCase {
+  private $regularUser;
+  private $loginDeniedNode;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Redirect When Login Denied',
+      'description' => 'Tests user is redirected when login deneid.',
+      'group' => 'Restrict By IP',
+    );
+  }
+
+  public function setUp() {
+    // Enable modules needed for these tests.
+    parent::setUp('restrict_by_ip');
+
+    // Create a user that we'll use to test logins.
+    $this->regularUser = $this->drupalCreateUser();
+
+    // Create a page users will get redirected to when denied login.
+    $this->loginDeniedNode = $this->drupalCreateNode();
+    variable_set('restrict_by_ip_error_page', 'node/' . $this->loginDeniedNode->nid);
+  }
+
+  // User redirected when outside global range and no destination query
+  // parameter is present.
+  public function testIpDifferGlobalNoDestination() {
+    // Add global IP range.
+    variable_set('restrict_by_ip_login_range', '10.0.0.0/8');
+    $this->assertRedirected();
+  }
+
+  // User redirected when outside user range and no destination query parameter
+  // is present.
+  public function testIpDifferUserNoDestination() {
+    // Add out of range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '10.0.0.0/8',
+    ));
+
+    $this->assertRedirected();
+  }
+
+  // User redirected when outside global range and a destination query parameter
+  // is present.
+  public function testIpDifferGlobalWithDestination() {
+    // Add global IP range.
+    variable_set('restrict_by_ip_login_range', '10.0.0.0/8');
+    $this->assertRedirected('node');
+  }
+
+  // User redirected when outside user range and a destination query parameter
+  // is present.
+  public function testIpDifferUserWithDestination() {
+    // Add out of range user IP.
+    db_query("INSERT INTO {restrict_by_ip} (uid, restrict_by_ip_address) VALUES (:uid, :ip)", array(
+      ':uid' => $this->regularUser->uid,
+      ':ip' => '10.0.0.0/8',
+    ));
+
+    $this->assertRedirected('node');
+  }
+
+  // Assert user gets redirected when login denied.
+  private function assertRedirected($destination = NULL) {
+    $edit = array(
+      'name' => $this->regularUser->name,
+      'pass' => $this->regularUser->pass_raw
+    );
+
+    $options = array();
+    if (isset($destination)) {
+      $options['query'] = array('destination' => $destination);
+    }
+
+    $this->drupalPost('user', $edit, t('Log in'), $options);
+
+    $this->assertNoLink(t('Log out'), 0, t('User %name unsuccessfully logged in.', array('%name' => $this->regularUser->name)), t('User login'));
+
+    $this->assertText($this->loginDeniedNode->title, 'Title of login denied page found.');
+  }
+}
+
+class RestrictByIpUnitTestCase extends DrupalUnitTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Restrict By IP Unit Tests',
+      'description' => 'Test the restrict by ip module.',
+      'group' => 'Restrict By IP',
+    );
+  }
+
+  public function setUp() {
+    drupal_load('module', 'restrict_by_ip');
+    parent::setUp();
+  }
+
+  public function testRestrictByIpUnitTestIpValidation() {
+    $result = _restrict_by_ip_validate_ip('string');
+    $this->assertFalse($result['result'], 'Not an IP address');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1');
+    $this->assertFalse($result['result'], 'Missing CIDR mask');
+
+    $result = _restrict_by_ip_validate_ip('127.0.1');
+    $this->assertFalse($result['result'], 'Not enough octets');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/8');
+    $this->assertFalse($result['result'], 'Invalid /8');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.0/8');
+    $this->assertTrue($result['result'], 'Valid /8');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/16');
+    $this->assertFalse($result['result'], 'Invalid /16');
+
+    $result = _restrict_by_ip_validate_ip('127.1.0.0/16');
+    $this->assertTrue($result['result'], 'Valid /16');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/24');
+    $this->assertFalse($result['result'], 'Invalid /24');
+
+    $result = _restrict_by_ip_validate_ip('127.1.1.0/24');
+    $this->assertTrue($result['result'], 'Valid /24');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/32');
+    $this->assertTrue($result['result'], 'Valid /32');
+
+    $result = _restrict_by_ip_validate_ip('192.0.0.0/8;192.0.0.1/8');
+    $this->assertFalse($result['result'], 'Validate multiple addresses with errors');
+
+    $result = _restrict_by_ip_validate_ip('192.0.0.0/8;192.0.0.0/8');
+    $this->assertTrue($result['result'], 'Validate multiple addresses with no errors');
+
+    $result = _restrict_by_ip_validate_ip('not.an.ip.address/8');
+    $this->assertFalse($result['result'], 'Invalid octets');
+
+    $result = _restrict_by_ip_validate_ip('192.168.256.1/32');
+    $this->assertFalse($result['result'], 'Out of range otctet');
+
+    $result = _restrict_by_ip_validate_ip('192.168.-1.1/32');
+    $this->assertFalse($result['result'], 'Out of range otctet');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/octet');
+    $this->assertFalse($result['result'], 'Invalid CIDR mask');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/33');
+    $this->assertFalse($result['result'], 'Out of range CIDR mask');
+
+    $result = _restrict_by_ip_validate_ip('127.0.0.1/-1');
+    $this->assertFalse($result['result'], 'Out of range CIDR mask');
+  }
+}

@@ -7,7 +7,6 @@ sites/*/private
 
 # Ignore custom modules and themes already under version control
 sites/all/modules/custom
-sites/all/modules/restrict_by_ip
 sites/all/themes/cfdpchat
 sites/all/themes/cyberhus-chat-theme
 sites/all/themes/netstof*

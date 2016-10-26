@@ -1,5 +1,7 @@
 # Ignore .htaccess since it's gonna be customized
 .htaccess
+.well-known
+spg-deploy
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php

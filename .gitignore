@@ -25,4 +25,5 @@ sites/all/modules/devel_themer
 sites/all/libraries/simplehtmldom
 sites/all/modules/simplehtmldom
 sites/all/modules/stage_file_proxy
+.DS_Store
 

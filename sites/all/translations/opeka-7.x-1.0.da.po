@@ -8,20 +8,24 @@
 #  opeka.info: n/a
 #  js/opeka.common.js: n/a
 #  js/opeka.views.js: n/a
+#  modules/opeka_opening_hours/opeka_opening_hours.admin.inc: n/a
+#  modules/opeka_opening_hours/opeka_opening_hours.module: n/a
+#  modules/opeka_opening_hours/opeka_opening_hours.info: n/a
 #  widgets/js/chatstatus.js: n/a
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2016-10-27 22:02+0200\n"
-"PO-Revision-Date: 2016-10-27 22:02+0200\n"
+"POT-Creation-Date: 2017-03-24 09:25+0100\n"
+"PO-Revision-Date: 2017-03-24 09:53+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Language: da\n"
+"X-Generator: Poedit 2.0beta5\n"
 
 #: opeka.admin.inc:44
 msgid "Opeka server URL"
@@ -29,138 +33,99 @@ msgstr "Opeka server URL"
 
 #: opeka.admin.inc:45
 msgid "URL to the Opeka connect.js javascript, eg. http://localhost:3000/connect.js"
-msgstr ""
-"URL to the Opeka connect.js javascriptet, f.eks. "
-"http://localhost:3000/connect.js"
+msgstr "URL til Opeka connect.js javascriptet, f.eks. http://localhost:3000/connect.js"
 
 #: opeka.admin.inc:52
-msgid "Chat schedule"
-msgstr "Chat åbningstider"
-
-#: opeka.admin.inc:53
-msgid "The schedule for the upcoming chat sessions"
-msgstr "Chattens åbningstider"
-
-#: opeka.admin.inc:60
 msgid "Pair chat name"
 msgstr "1-til-1 chat navn"
 
-#: opeka.admin.inc:61
+#: opeka.admin.inc:53
 msgid "The pair chat name can be shown in some chat widgets"
 msgstr "1-til-1 chat-navnet vises i visse chat widgets"
 
-#: opeka.admin.inc:68
+#: opeka.admin.inc:60
 msgid "Group chat name"
 msgstr "Gruppechat-navn"
 
-#: opeka.admin.inc:69
+#: opeka.admin.inc:61
 msgid "The group chat name can be shown in some chat widgets"
 msgstr "Gruppechat-navnet vises i visse chat widgets"
 
-#: opeka.admin.inc:76
-msgid "Welcome message"
-msgstr "Velkomstbesked"
-
-#: opeka.admin.inc:78
-msgid "Text shown before user logs into the chat."
-msgstr "Tekst der vises før brugeren logger på chatten"
-
-#: opeka.admin.inc:85
+#: opeka.admin.inc:68
 msgid "Login sound file"
 msgstr "Login-lyd fil"
 
-#: opeka.admin.inc:86
+#: opeka.admin.inc:69
 msgid "URL to a sound file that is played for the counselor when a client logs in."
 msgstr "URL til lyd-fil der afspilles for rådgivere når en bruger logger ind"
 
-#: opeka.admin.inc:93
+#: opeka.admin.inc:76
 msgid "Feedback URL"
 msgstr "Feedback URL"
 
-#: opeka.admin.inc:94
+#: opeka.admin.inc:77
 msgid "URL to a feedback page, e.g. a Google Form, where clients can enter evaluation data after a chat."
-msgstr ""
-"URL til feedback-side, f.eks. en google formular, hvor brugere kan "
-"evaluere chat-forløbet efter en chat er overstået"
+msgstr "URL til feedback-side, f.eks. en google formular, hvor brugere kan evaluere chat-forløbet efter en chat er overstået"
 
-#: opeka.admin.inc:101
+#: opeka.admin.inc:84
 msgid "Group Chat feedback URL"
 msgstr "Group Chat feedback URL"
 
-#: opeka.admin.inc:102
+#: opeka.admin.inc:85
 msgid "URL to a feedback page, e.g. a Google Form, where group chat clients can enter evaluation data after a chat."
-msgstr ""
-"URL til feedback-side, f.eks. en google formular, hvor "
-"gruppechat-brugere kan evaluere chat-forløbet efter en chat er "
-"overstået"
+msgstr "URL til feedback-side, f.eks. en google formular, hvor gruppechat-brugere kan evaluere chat-forløbet efter en chat er overstået"
 
-#: opeka.admin.inc:109
+#: opeka.admin.inc:92
 msgid "Automatic redirection to questionnaire in external window?"
 msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 
-#: opeka.admin.inc:110
+#: opeka.admin.inc:93
 msgid "Check this box if the feedback form should be opened automatically for clients."
-msgstr ""
-"Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for "
-"brugerne."
+msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.inc:117
+#: opeka.admin.inc:100
 msgid "1-to-1 chat registration form"
 msgstr "1-to-1 chat registrations-formular"
 
-#: opeka.admin.inc:118
+#: opeka.admin.inc:101
 msgid "URL to a registration form, where counselors can enter data after a 1-to-1 chat."
-msgstr ""
-"URL til en registreringsside hvor rådgivere kan registrere data efter "
-"en afsluttet 1-til-1 chat"
+msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet 1-til-1 chat"
 
-#: opeka.admin.inc:125
+#: opeka.admin.inc:108
 msgid "Group chat registration form"
 msgstr "Gruppechat registreringsside"
 
-#: opeka.admin.inc:126
+#: opeka.admin.inc:109
 msgid "URL to a registration form, where counselors can enter data after a group chat."
-msgstr ""
-"URL til en registreringsside hvor rådgivere kan registrere data efter "
-"en afsluttet gruppe-chat"
+msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet gruppe-chat"
 
-#: opeka.admin.inc:133
+#: opeka.admin.inc:116
 msgid "Pair chat user list visibility"
 msgstr "Visning af brugerliste i 1-til-1 chat"
 
-#: opeka.admin.inc:134
+#: opeka.admin.inc:117
 msgid "Toggle the user list visibility in the pair chat. Check it if the user list should be visible"
 msgstr "Slår visning af brugerlisten i 1-til-1 chat til og fra."
 
-#: opeka.admin.inc:141 opeka.module:76
+#: opeka.admin.inc:124 opeka.module:84
 msgid "Popup widget"
 msgstr "Popup widget"
 
-#: opeka.admin.inc:142
+#: opeka.admin.inc:125
 msgid "If the popup or the multi widgets are used, please provide the URL of the client site, eg. http://mysite.com."
-msgstr ""
-"Hvis popup- eller multichat widgets er i brug, indtast her navnet på "
-"kundens site, f.eks. http://mysite.com"
+msgstr "Hvis popup- eller multichat widgets er i brug, indtast her navnet på kundens site, f.eks. http://mysite.com"
 
-#: opeka.admin.inc:149
+#: opeka.admin.inc:132
 msgid "Custom css file for widget styles"
 msgstr "Tilpasset css fil til widget styling"
 
-#: opeka.admin.inc:150
+#: opeka.admin.inc:133
 msgid "URL to a custom css file for the widgets."
 msgstr "URL til en tilpasset css fil til widgets"
 
-#: opeka.admin.inc:170
+#: opeka.admin.inc:147
 msgid "The URL in the custom CSS field returned 404 not found. Please make sure the the URL is correct."
-msgstr ""
-"URLen i \"Tilpasset CSS-fil\"-feltet returnerede \"404 ikke fundet\". "
-"Check om URLen er korrekt."
-
-#: opeka.admin.inc:182
-msgid "Something went wrong - the chat was not restarted. Please contact support if problem persists."
-msgstr ""
-"Noget gik galt - chatten blev ikke genstartet. Kontakt venligst "
-"support, hvis problemet opstår igen."
+msgstr "URLen i \"Tilpasset CSS-fil\"-feltet returnerede \"404 ikke fundet\". Check om URLen er korrekt."
 
 #: opeka.module:16
 msgid "Access the chat system"
@@ -186,55 +151,71 @@ msgstr "Opret ban-koder til Opeka Chat"
 msgid "Grants a user access to generate opeka chat ban codes."
 msgstr "Giver en bruger adgang til at oprette ban-koder til Opeka Chat."
 
-#: opeka.module:124
+#: opeka.module:28
+msgid "Hide typing message"
+msgstr "Skjul “Bruger skriver…” besked"
+
+#: opeka.module:29
+msgid "Grants a user access to hide typing message."
+msgstr "Giver en bruger adgang til at skjule “Brugeren skriver…” beskeder."
+
+#: opeka.module:32
+msgid "Pause opeka chat auto-scroll"
+msgstr "Brems Opeka chat auto-scroll"
+
+#: opeka.module:33
+msgid "Grants a user access to pause opeka chat auto-scrolling."
+msgstr "Giver en bruger adgang til at bremse auto-scrolling."
+
+#: opeka.module:132
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:204
+#: opeka.module:212
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:222
+#: opeka.module:230
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig"
 
-#: opeka.module:236;60
+#: opeka.module:244;68
 msgid "Header widget"
 msgstr "Header widget"
 
-#: opeka.module:37;44
+#: opeka.module:45;52
 msgid "Chat"
 msgstr "Chat"
 
-#: opeka.module:51
+#: opeka.module:59
 msgid "Opeka - Chat system"
 msgstr "Opeka - Chat system"
 
-#: opeka.module:52
+#: opeka.module:60
 msgid "Provides settings for the chat service."
 msgstr "Tilbyder indstillinger for chatten."
 
-#: opeka.module:61
+#: opeka.module:69
 msgid "Header widget code for third party sites."
 msgstr "Header widget kode til brug på eksterne sites."
 
-#: opeka.module:68
+#: opeka.module:76
 msgid "Inline widget"
 msgstr "Inline widget"
 
-#: opeka.module:69
+#: opeka.module:77
 msgid "Inline widget code for third party sites."
 msgstr "Inline widget kode til brug  på eksterne sites."
 
-#: opeka.module:77
+#: opeka.module:85
 msgid "Popup widget code for third party sites."
 msgstr "Popup widget til brug på eksterne sites"
 
-#: opeka.module:84
+#: opeka.module:92
 msgid "Foldout widget"
 msgstr "Folde-ud widget"
 
-#: opeka.module:85
+#: opeka.module:93
 msgid "Foldout widget code for third party sites."
 msgstr "Folde-ud widget kode til brug på eksterne sites."
 
@@ -252,9 +233,7 @@ msgstr "Siden @path blev ikke fundet."
 
 #: js/opeka.common.js:0
 msgid "An error happened and you have lost the queue status, you can reload and join the queue again."
-msgstr ""
-"Hov! Der er sket en fejl, og du har mistet din placering i køen. Du "
-"kan genindlæse siden og stille dig i kø igen."
+msgstr "Hov! Der er sket en fejl, og du har mistet din placering i køen. Du kan genindlæse siden og stille dig i kø igen."
 
 #: js/opeka.common.js:0
 msgid "Error"
@@ -283,9 +262,7 @@ msgstr "Brugeren @user blev smidt ud af chatten."
 #: js/opeka.common.js:0
 msgid "The chat that you were in queue for has closed and your position in the queue with it. You are welcome to join again when the chat reopens or join a different chat room or queue."
 msgstr ""
-"Den chat du var i kø til er blevet lukket og du har derfor mistet din "
-"plads i køen. Du er velkommen til at prøve igen når chatten "
-"genåbner, eller prøve at logge på en anden chat."
+"Den chat du var i kø til er blevet lukket og du har derfor mistet din plads i køen. Du er velkommen til at prøve igen når chatten genåbner, eller prøve at logge på en anden chat."
 
 #: js/opeka.common.js:0
 msgid "Chat and queue closed"
@@ -321,9 +298,7 @@ msgstr "Forkert kode."
 
 #: js/opeka.common.js:0
 msgid "To access the chat you must be logged in to the website. Please log in and try again."
-msgstr ""
-"Du skal være logget ind for at kunne tilgå chatten. Log venligst ind "
-"og prøv igen."
+msgstr "Du skal være logget ind for at kunne tilgå chatten. Log venligst ind og prøv igen."
 
 #: js/opeka.common.js:0
 msgid "Login required"
@@ -331,9 +306,7 @@ msgstr "Login påkrævet"
 
 #: js/opeka.common.js:0;0
 msgid "Your connection to the chat server was lost. Please reconnect. Contact support if problem persists."
-msgstr ""
-"Forbindelsen til chatserveren blev afbrudt. Forsøg evt. at logge på "
-"igen. Kontakt venligst support, hvis problemet opstår igen."
+msgstr "Forbindelsen til chatserveren blev afbrudt. Forsøg evt. at logge på igen. Kontakt venligst support, hvis problemet opstår igen."
 
 #: js/opeka.common.js:0;0
 msgid "Disconnected"
@@ -341,9 +314,7 @@ msgstr "Logget af"
 
 #: js/opeka.common.js:0
 msgid "The chat server seems to be offline. Please reload the page to try connecting again or contact support if the problem persists."
-msgstr ""
-"Chatserveren ser ud til at være offline. Forsøg evt. at genindlæse "
-"siden eller kontakt support hvis problemet ikke forsvinder."
+msgstr "Chatserveren ser ud til at være offline. Forsøg evt. at genindlæse siden eller kontakt support hvis problemet ikke forsvinder."
 
 #: js/opeka.common.js:0
 msgid "No connection server"
@@ -355,9 +326,7 @@ msgstr "Chatten indlæses..."
 
 #: js/opeka.views.js:0
 msgid "Chat room is full, you are currently in queue as number: @number. You can stay and wait until you can enter or leave the queue."
-msgstr ""
-"Chatten er optaget, du er lige nu i kø som nummer: @number. Du kan "
-"blive og vente indtil du kan komme igennem eller forlade køen."
+msgstr "Chatten er optaget, du er lige nu i kø som nummer: @number. Du kan blive og vente indtil du kan komme igennem eller forlade køen."
 
 #: js/opeka.views.js:0
 msgid "Delete"
@@ -381,9 +350,7 @@ msgstr "Forlad køen"
 
 #: js/opeka.views.js:0
 msgid "Leave chat room and close it if no other councillors are present"
-msgstr ""
-"Forlad chatten og luk rummet, hvis du er den sidste rådgiver til "
-"stede"
+msgstr "Forlad chatten og luk rummet, hvis du er den sidste rådgiver til stede"
 
 #: js/opeka.views.js:0
 msgid "Leave chat room"
@@ -396,9 +363,8 @@ msgstr "Skriv din besked her..."
 #: js/opeka.views.js:0
 msgid "When you are muted, you are not allowed to send any messages until the counselor decides to unmute you. You can see all the other messages and receive whispers."
 msgstr ""
-"Når du har fået frataget retten til tale kan du ikke skrive beskeder "
-"i chatten indtil rådgiveren giver dig retten tilbage. Du kan dog se "
-"alle beskeder og modtage private hviske-beskeder fra rådgiver."
+"Når du har fået frataget retten til tale kan du ikke skrive beskeder i chatten indtil rådgiveren giver dig retten tilbage. Du kan dog se alle beskeder og modtage private hviske-"
+"beskeder fra rådgiver."
 
 #: js/opeka.views.js:0
 msgid "The room is paused"
@@ -415,6 +381,26 @@ msgstr "Send"
 #: js/opeka.views.js:0
 msgid "Press ENTER to send."
 msgstr "Tryk ENTER for at sende"
+
+#: js/opeka.views.js:0
+msgid "Hide typing messages."
+msgstr "Skjul \"Bruger skriver...\" besked"
+
+#: js/opeka.views.js:0
+msgid "Pause auto-scrolling."
+msgstr "Brems auto-scrolling."
+
+#: js/opeka.views.js:0
+msgid "@writers is typing..."
+msgstr "@writers skriver..."
+
+#: js/opeka.views.js:0
+msgid "@writers are typing..."
+msgstr "@writers skriver…"
+
+#: js/opeka.views.js:0
+msgid "@writers people are typing..."
+msgstr "@writers brugere skriver…"
 
 #: js/opeka.views.js:0
 msgid "Pause chat"
@@ -506,9 +492,7 @@ msgstr "Sluk chatten"
 
 #: js/opeka.views.js:0
 msgid "You are currently number @position in the queue. Number of rooms you can join from this queue: @rooms."
-msgstr ""
-"Du er i øjeblikket nummer @position i køen. Antal af rum du kan gå "
-"ind i fra denne kø: @rooms."
+msgstr "Du er i øjeblikket nummer @position i køen. Antal af rum du kan gå ind i fra denne kø: @rooms."
 
 #: js/opeka.views.js:0
 msgid "Ban code generated"
@@ -524,9 +508,7 @@ msgstr "Du er blevet banlyst fra chatten."
 
 #: js/opeka.views.js:0
 msgid "The IP address you are currently visiting the site from is banned from the chat system. You will not be able to participate in the chat."
-msgstr ""
-"Den IP-adresse du bruger til at tilgå chatten er banlyst fra "
-"chat-systemet. Det vil ikke være muligt for dig at deltage i chatten."
+msgstr "Den IP-adresse du bruger til at tilgå chatten er banlyst fra chat-systemet. Det vil ikke være muligt for dig at deltage i chatten."
 
 #: js/opeka.views.js:0
 msgid "Reload"
@@ -574,9 +556,7 @@ msgstr "Ok"
 
 #: js/opeka.views.js:0
 msgid "Please confirm the deletion of this room. You can provide a final message that will be shown to all participants when the room is closed."
-msgstr ""
-"Bekræft venligst at dette chatrum slettes. Du kan efterlade en "
-"slutbesked, som vil blive vist til alle deltagere når rummet lukkes."
+msgstr "Bekræft venligst at dette chatrum slettes. Du kan efterlade en slutbesked, som vil blive vist til alle deltagere når rummet lukkes."
 
 #: js/opeka.views.js:0
 msgid "Final message"
@@ -648,9 +628,7 @@ msgstr "Opret ny kø"
 
 #: js/opeka.views.js:0
 msgid "You are about to leave a pair room that you created - are you sure you want to do this?"
-msgstr ""
-"Du er ved at forlade et 1-til-1 rum du har oprettet. Er du sikker på "
-"at du vil gøre dette?"
+msgstr "Du er ved at forlade et 1-til-1 rum du har oprettet. Er du sikker på at du vil gøre dette?"
 
 #: js/opeka.views.js:0
 msgid "Comfirm: leave room"
@@ -690,9 +668,7 @@ msgstr "Sat på pause"
 
 #: js/opeka.views.js:0
 msgid "The chat is closed. Users will not be able to log into chat rooms before it is opened by a coordinator"
-msgstr ""
-"Chatten er lukket. Brugere vil ikke kunne logge ind, før chatten er "
-"åbnet af en koordinator"
+msgstr "Chatten er lukket. Brugere vil ikke kunne logge ind, før chatten er åbnet af en koordinator"
 
 #: js/opeka.views.js:0
 msgid "Create room"
@@ -708,10 +684,7 @@ msgstr "Du viderestilles nu til et spørgeskema."
 
 #: js/opeka.views.js:0
 msgid "Open the feedback form."
-msgstr ""
-"Hvis du har lyst og tid, kan du være med til at gøre "
-"chatrådgivningen endnu bedre ved at svare på nogle hurtige "
-"spørgsmål... Det tager kun 1-2 minutter. Klik her."
+msgstr "Hvis du har lyst og tid, kan du være med til at gøre chatrådgivningen endnu bedre ved at svare på nogle hurtige spørgsmål... Det tager kun 1-2 minutter. Klik her."
 
 #: js/opeka.views.js:0;0
 msgid "Close the window"
@@ -731,7 +704,7 @@ msgstr "Kick besked"
 
 #: js/opeka.views.js:0
 msgid "@name will be removed from the room, but he/she will be able to log in again."
-msgstr "@name vil blive fjernet fra rummet, men vil kunne logge ind igen.\r\n"
+msgstr "@name vil blive fjernet fra rummet, men vil kunne logge ind igen."
 
 #: js/opeka.views.js:0
 msgid "Confirm kick"
@@ -743,9 +716,7 @@ msgstr "Ban-kode"
 
 #: js/opeka.views.js:0
 msgid "If a valid ban code is entered, user will be banned from the chat system."
-msgstr ""
-"Hvis der indtastes en gyldig ban-kode vil brugeren blive banlyst fra "
-"chat-systemet."
+msgstr "Hvis der indtastes en gyldig ban-kode vil brugeren blive banlyst fra chat-systemet."
 
 #: js/opeka.views.js:0
 msgid "Ban message"
@@ -818,6 +789,78 @@ msgstr "Henter..."
 #: js/opeka.views.js:0
 msgid "Starting chat…"
 msgstr "Chatten starter op..."
+
+#: js/opeka.views.js:0
+msgid "Do you really want to leave this page?"
+msgstr "Vil du virkelig forlade denne side?"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:45;66
+msgid "From"
+msgstr "Fra"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:51;71
+msgid "To"
+msgstr "Til"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:79
+msgid "Add one more"
+msgstr "Tilføj åbningstid"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:91
+msgid "Chat schedule message"
+msgstr "Besked ang. åbningstider"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:92
+msgid "The message for the upcoming chat sessions"
+msgstr "Besked ang. de kommende chat-sessioner"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:94 modules/opeka_opening_hours/opeka_opening_hours.module:79
+msgid "You can chat with the counselors according to the following schedule."
+msgstr "Du kan chatte med rådgiverne på flg. tidspunkter."
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:17
+msgid "Administer the Opeka opening hours"
+msgstr "Administrer Opeka åbningstider"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:18
+msgid "Grants a user access to the admin backend for managing the Opeka Opening hours ."
+msgstr "Giver en bruger tilladelse til at bruge administrationsdelen til Opeka åbningstiderne"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:45
+msgid "Opening hours"
+msgstr "Åbningstider"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:96
+msgid "Monday"
+msgstr "Mandag"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:97
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:98
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:99
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:100
+msgid "Friday"
+msgstr "Fredag"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:35
+msgid "Provides management options for the Opeka opening hours."
+msgstr "Tilbyder administrationsmuligheder for Opeka åbningstider."
+
+#: modules/opeka_opening_hours/opeka_opening_hours.info:0
+msgid "Opeka Opening Hours"
+msgstr "Opeka åbningstider"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.info:0
+msgid "An Opeka submodule, allowing to manage the opening hours and related info."
+msgstr "Et Opeka submodule, der giver mulighed for at administrere åbningstider og relateret info."
 
 #: widgets/js/chatstatus.js:0
 msgid "The 1-to-1 chat"

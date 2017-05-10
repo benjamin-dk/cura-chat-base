@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2017-05-08 13:14+0200\n"
-"PO-Revision-Date: 2017-05-08 13:20+0200\n"
+"PO-Revision-Date: 2017-05-10 10:05+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -832,11 +832,11 @@ msgstr "Til"
 
 #: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:79
 msgid "Add one more"
-msgstr "Tilføj element"
+msgstr "Tilføj åbningstid"
 
 #: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:91
 msgid "Chat schedule message"
-msgstr "Besked ang. chat åbningstider"
+msgstr "Tekst i chat-skiltet"
 
 #: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:92
 msgid "The message for the upcoming chat sessions"

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2017-05-10 10:16+0200\n"
-"PO-Revision-Date: 2017-05-10 11:31+0200\n"
+"PO-Revision-Date: 2017-05-11 22:54+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -406,7 +406,7 @@ msgstr "Sæt auto-scrolling på pause."
 
 #: js/opeka.views.js:0
 msgid "@writers is typing..."
-msgstr "skriver..."
+msgstr "@writers skriver..."
 
 #: js/opeka.views.js:0
 msgid "@writers are typing..."
@@ -870,7 +870,7 @@ msgstr "Besked ang. de kommende chat-sessioner"
 
 #: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:96 modules/opeka_opening_hours/opeka_opening_hours.module:80
 msgid "You can chat with the counselors according to the following schedule."
-msgstr "Du kan chatte med rådgiverne på de følgende tidspunkter."
+msgstr "Beskriv chatten kort, eller angiv evt dagens tema."
 
 #: modules/opeka_opening_hours/opeka_opening_hours.module:17
 msgid "Administer the Opeka opening hours"

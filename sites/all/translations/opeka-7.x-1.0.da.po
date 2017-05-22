@@ -6,10 +6,11 @@
 #  opeka.admin.advanced.inc: n/a
 #  opeka.module: n/a
 #  opeka.admin.inc: n/a
+#  opeka.install: n/a
 #  opeka.info: n/a
 #  js/opeka.common.js: n/a
 #  js/opeka.views.js: n/a
-#  modules/features/opeka_features_permissions/opeka_features_permissions.install: n/a
+#  modules/opeka_screening/opeka_screening.results.inc: n/a
 #  modules/features/opeka_features_permissions/opeka_features_permissions.info: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.admin.inc: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.module: n/a
@@ -22,8 +23,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-05-10 10:16+0200\n"
-"PO-Revision-Date: 2017-05-11 22:54+0200\n"
+"POT-Creation-Date: 2017-05-22 11:01+0200\n"
+"PO-Revision-Date: 2017-05-22 11:06+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -89,7 +90,7 @@ msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 msgid "Check this box if the feedback form should be opened automatically for clients."
 msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.advanced.inc:67 opeka.module:99
+#: opeka.admin.advanced.inc:67 opeka.module:103
 msgid "Popup widget"
 msgstr "Popup widget"
 
@@ -181,65 +182,85 @@ msgstr "Sæt opeka chat auto-scroll på pause"
 msgid "Grants a user access to pause opeka chat auto-scrolling."
 msgstr "Giver en bruger tilladelse til at sætte opeka chat auto-scrolling på pause."
 
-#: opeka.module:147
+#: opeka.module:40
+msgid "Access chat history"
+msgstr "Se chat historik"
+
+#: opeka.module:41
+msgid "Grants a user access to view opeka chat messages sent before user logged in."
+msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt før brugeren loggede på."
+
+#: opeka.module:151
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:229
+#: opeka.module:233
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:247
+#: opeka.module:251
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:261;83
+#: opeka.module:265;87
 msgid "Header widget"
 msgstr "Header widget"
 
-#: opeka.module:49;56
+#: opeka.module:53;60
 msgid "Chat"
 msgstr "Chat"
 
-#: opeka.module:63
+#: opeka.module:67
 msgid "Opeka Chat - General settings"
 msgstr "Opeka Chat - generelle indstillinger"
 
-#: opeka.module:64
+#: opeka.module:68
 msgid "Provides settings for the chat service."
 msgstr "Tilbyder indstillinger for chatten."
 
-#: opeka.module:72
+#: opeka.module:76
 msgid "Advanced settings"
 msgstr "Avancerede indstillinger"
 
-#: opeka.module:73
+#: opeka.module:77
 msgid "Provides advanced settings for the chat service."
 msgstr "Tilbyder avancerede indstillinger for chatten."
 
-#: opeka.module:84
+#: opeka.module:88
 msgid "Header widget code for third party sites."
 msgstr "Header widget kode til brug på eksterne sites."
 
-#: opeka.module:91
+#: opeka.module:95
 msgid "Inline widget"
 msgstr "Inline widget"
 
-#: opeka.module:92
+#: opeka.module:96
 msgid "Inline widget code for third party sites."
 msgstr "Inline widget kode til brug  på eksterne sites."
 
-#: opeka.module:100
+#: opeka.module:104
 msgid "Popup widget code for third party sites."
 msgstr "Popup widget til brug på eksterne sites."
 
-#: opeka.module:107
+#: opeka.module:111
 msgid "Foldout widget"
 msgstr "Folde-ud widget"
 
-#: opeka.module:108
+#: opeka.module:112
 msgid "Foldout widget code for third party sites."
 msgstr "Folde-ud widget kode til brug på eksterne sites."
+
+#: opeka.install:77
+msgid "Enabling modules..."
+msgstr "Aktiverer moduler…"
+
+#: opeka.install:86
+msgid "Reverting the opeka permissions"
+msgstr "Nulstil opeka tilladelserne"
+
+#: opeka.install:90
+msgid "Some modules needed for feature reverting not enabled. Not reverting."
+msgstr "Der mangler moduler for at nulstillingen kan udføres. Nulstilling ikke udført."
 
 #: opeka.info:0
 msgid "Opeka"
@@ -406,7 +427,7 @@ msgstr "Sæt auto-scrolling på pause."
 
 #: js/opeka.views.js:0
 msgid "@writers is typing..."
-msgstr "@writers skriver..."
+msgstr "skriver..."
 
 #: js/opeka.views.js:0
 msgid "@writers are typing..."
@@ -452,7 +473,7 @@ msgstr "Pige"
 msgid "man"
 msgstr "Dreng"
 
-#: js/opeka.views.js:0;0
+#: js/opeka.views.js:0;0 modules/opeka_screening/opeka_screening.results.inc:78
 msgid "non-binary"
 msgstr "Non-binær"
 
@@ -824,21 +845,13 @@ msgstr "Anonymous!x"
 msgid "Do you really want to leave this page?"
 msgstr "Ønsker du at forlade denne side?"
 
-#: modules/features/opeka_features_permissions/opeka_features_permissions.install:12
-msgid "Reverting the opeka permissions"
-msgstr "Nulstil opeka tilladelserne"
-
-#: modules/features/opeka_features_permissions/opeka_features_permissions.install:16
-msgid "Some modules needed for feature reverting not enabled. Not reverting."
-msgstr "Der mangler moduler for at nulstillingen kan udføres. Nulstilling ikke udført."
-
 #: modules/features/opeka_features_permissions/opeka_features_permissions.info:0
 msgid "Opeka Features - permissions"
-msgstr ""
+msgstr "Opeka Features - tilladelser"
 
 #: modules/features/opeka_features_permissions/opeka_features_permissions.info:0
 msgid "Permissions settings for Opeka"
-msgstr ""
+msgstr "Tilladelses-indstillinger for Opeka"
 
 #: modules/features/opeka_features_permissions/opeka_features_permissions.info:0
 msgid "Features"
@@ -868,9 +881,9 @@ msgstr "Tekst i chat-skiltet"
 msgid "The message for the upcoming chat sessions"
 msgstr "Besked ang. de kommende chat-sessioner"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:96 modules/opeka_opening_hours/opeka_opening_hours.module:80
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:96 modules/opeka_opening_hours/opeka_opening_hours.module:79
 msgid "You can chat with the counselors according to the following schedule."
-msgstr "Beskriv chatten kort, eller angiv evt dagens tema."
+msgstr "Du kan chatte med rådgiverne på de følgende tidspunkter."
 
 #: modules/opeka_opening_hours/opeka_opening_hours.module:17
 msgid "Administer the Opeka opening hours"
@@ -880,35 +893,35 @@ msgstr "Administrér Opeka åbningstider"
 msgid "Grants a user access to the admin backend for managing the Opeka Opening hours ."
 msgstr "Giver en bruger adgang til administrationsdelen for Opeka åbningstiderne."
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:97
+#: modules/opeka_opening_hours/opeka_opening_hours.module:96
 msgid "Monday"
 msgstr "Mandag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:98
+#: modules/opeka_opening_hours/opeka_opening_hours.module:97
 msgid "Tuesday"
 msgstr "Tirsdag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:99
+#: modules/opeka_opening_hours/opeka_opening_hours.module:98
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:100
+#: modules/opeka_opening_hours/opeka_opening_hours.module:99
 msgid "Thursday"
 msgstr "Torsdag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:101
+#: modules/opeka_opening_hours/opeka_opening_hours.module:100
 msgid "Friday"
 msgstr "Fredag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:33
+#: modules/opeka_opening_hours/opeka_opening_hours.module:32
 msgid "General settings"
 msgstr "Generelle indstillinger"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:37
+#: modules/opeka_opening_hours/opeka_opening_hours.module:36
 msgid "Provides management options for the Opeka opening hours."
 msgstr "Administrationsmuligheder for Opeka åbningstider."
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:46
+#: modules/opeka_opening_hours/opeka_opening_hours.module:45
 msgid "Opening hours"
 msgstr "Åbningstider"
 
@@ -928,7 +941,7 @@ msgstr "Screening spørgsmål"
 msgid "The question you want to pose to the users."
 msgstr "Spørgsmålet, du vil stille dine brugere."
 
-#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:85
+#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:94
 msgid "Question..."
 msgstr "Spørgsmål…"
 
@@ -940,6 +953,30 @@ msgstr "Svarmulighed…"
 msgid "Add one more option"
 msgstr "Tilføj en mulighed"
 
+#: modules/opeka_screening/opeka_screening.results.inc:56;62
+msgid "None"
+msgstr "Ingen"
+
+#: modules/opeka_screening/opeka_screening.results.inc:64
+msgid "Total number of chat sessions: "
+msgstr "Samlet antal chat sessioner: "
+
+#: modules/opeka_screening/opeka_screening.results.inc:65
+msgid "Total number of chat sessions last 4 weeks: "
+msgstr "Samlet antal chat sessioner de seneste 4 uger: "
+
+#: modules/opeka_screening/opeka_screening.results.inc:72
+msgid "female"
+msgstr "pige"
+
+#: modules/opeka_screening/opeka_screening.results.inc:75
+msgid "male"
+msgstr "dreng"
+
+#: modules/opeka_screening/opeka_screening.results.inc:81
+msgid "gender not set"
+msgstr "køn ikke angivet"
+
 #: modules/opeka_screening/opeka_screening.module:17
 msgid "Administer the Opeka Screening Questions"
 msgstr "Administrér Opeka screening spørgsmål"
@@ -948,13 +985,17 @@ msgstr "Administrér Opeka screening spørgsmål"
 msgid "Grants a user access to the admin backend for managing the Opeka Screening Questions."
 msgstr "Tildeler en bruger adgang til de avancerede indstillinger for Opeka screening spørgsmål."
 
-#: modules/opeka_screening/opeka_screening.module:53
+#: modules/opeka_screening/opeka_screening.module:52
 msgid "Screening Questions"
 msgstr "Screening spørgsmål"
 
-#: modules/opeka_screening/opeka_screening.module:56
+#: modules/opeka_screening/opeka_screening.module:55
 msgid "Provides settings for the screening questions."
 msgstr "Administration for Screening spørgsmål."
+
+#: modules/opeka_screening/opeka_screening.module:63
+msgid "Screening results"
+msgstr "Screening resultater"
 
 #: modules/opeka_screening/opeka_screening.info:0
 msgid "Opeka Screening Questions"

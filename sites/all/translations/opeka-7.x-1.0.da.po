@@ -23,8 +23,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-05-22 11:01+0200\n"
-"PO-Revision-Date: 2017-05-22 11:06+0200\n"
+"POT-Creation-Date: 2017-05-22 12:06+0200\n"
+"PO-Revision-Date: 2017-05-22 13:25+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -250,7 +250,7 @@ msgstr "Folde-ud widget"
 msgid "Foldout widget code for third party sites."
 msgstr "Folde-ud widget kode til brug på eksterne sites."
 
-#: opeka.install:77
+#: opeka.install:77;98
 msgid "Enabling modules..."
 msgstr "Aktiverer moduler…"
 
@@ -258,9 +258,13 @@ msgstr "Aktiverer moduler…"
 msgid "Reverting the opeka permissions"
 msgstr "Nulstil opeka tilladelserne"
 
-#: opeka.install:90
+#: opeka.install:90;111
 msgid "Some modules needed for feature reverting not enabled. Not reverting."
 msgstr "Der mangler moduler for at nulstillingen kan udføres. Nulstilling ikke udført."
+
+#: opeka.install:107
+msgid "Reverting the opeka screening permissions"
+msgstr "Nulstiller opeka screening tilladelser"
 
 #: opeka.info:0
 msgid "Opeka"
@@ -789,11 +793,11 @@ msgstr "Rådgiver"
 msgid "Ready for chat"
 msgstr "Klar til at chatte"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 modules/opeka_screening/opeka_screening.results.inc:12
 msgid "Age"
 msgstr "Alder"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 modules/opeka_screening/opeka_screening.results.inc:13
 msgid "Gender"
 msgstr "Køn"
 
@@ -941,7 +945,7 @@ msgstr "Screening spørgsmål"
 msgid "The question you want to pose to the users."
 msgstr "Spørgsmålet, du vil stille dine brugere."
 
-#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:94
+#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:98
 msgid "Question..."
 msgstr "Spørgsmål…"
 
@@ -952,6 +956,22 @@ msgstr "Svarmulighed…"
 #: modules/opeka_screening/opeka_screening.admin.inc:66
 msgid "Add one more option"
 msgstr "Tilføj en mulighed"
+
+#: modules/opeka_screening/opeka_screening.results.inc:10
+msgid "Date"
+msgstr "Dato"
+
+#: modules/opeka_screening/opeka_screening.results.inc:11
+msgid "ID"
+msgstr "ID"
+
+#: modules/opeka_screening/opeka_screening.results.inc:14
+msgid "Question"
+msgstr "Spørgsmål"
+
+#: modules/opeka_screening/opeka_screening.results.inc:15
+msgid "Answer"
+msgstr "Svar"
 
 #: modules/opeka_screening/opeka_screening.results.inc:56;62
 msgid "None"
@@ -985,15 +1005,23 @@ msgstr "Administrér Opeka screening spørgsmål"
 msgid "Grants a user access to the admin backend for managing the Opeka Screening Questions."
 msgstr "Tildeler en bruger adgang til de avancerede indstillinger for Opeka screening spørgsmål."
 
-#: modules/opeka_screening/opeka_screening.module:52
+#: modules/opeka_screening/opeka_screening.module:21
+msgid "View the Opeka Screening Question results"
+msgstr "Se Opeka Screening Spørgsmåls-resultater"
+
+#: modules/opeka_screening/opeka_screening.module:22
+msgid "Grants a user access to the  Opeka Screening Question results."
+msgstr "Giver en bruger adgang til Opeka Screening Spørgsmåls-resultater."
+
+#: modules/opeka_screening/opeka_screening.module:56
 msgid "Screening Questions"
 msgstr "Screening spørgsmål"
 
-#: modules/opeka_screening/opeka_screening.module:55
+#: modules/opeka_screening/opeka_screening.module:59
 msgid "Provides settings for the screening questions."
 msgstr "Administration for Screening spørgsmål."
 
-#: modules/opeka_screening/opeka_screening.module:63
+#: modules/opeka_screening/opeka_screening.module:67
 msgid "Screening results"
 msgstr "Screening resultater"
 

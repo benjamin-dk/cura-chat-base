@@ -18,6 +18,7 @@ sites/all/themes/netstof*
 sites/all/themes/kram*
 sites/all/themes/kbh-chat-theme
 sites/all/themes/cura-chat-theme
+sites/all/themes/curachat_v2
 
 # Ignore devel stuff
 sites/all/modules/devel

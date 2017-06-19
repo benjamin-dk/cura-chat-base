@@ -8,10 +8,12 @@
 #  opeka.admin.inc: n/a
 #  opeka.statistics.inc: n/a
 #  js/opeka.views.js: n/a
+#  modules/opeka_invite/opeka_invite.module: n/a
 #  opeka.install: n/a
 #  opeka.info: n/a
 #  js/opeka.common.js: n/a
 #  modules/features/opeka_features_permissions/opeka_features_permissions.info: n/a
+#  modules/opeka_invite/opeka_invite.info: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.admin.inc: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.module: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.info: n/a
@@ -23,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-06-01 11:16+0200\n"
-"PO-Revision-Date: 2017-06-01 11:31+0200\n"
+"POT-Creation-Date: 2017-06-19 21:03+0200\n"
+"PO-Revision-Date: 2017-06-19 21:59+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +92,7 @@ msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 msgid "Check this box if the feedback form should be opened automatically for clients."
 msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.advanced.inc:67 opeka.module:122
+#: opeka.admin.advanced.inc:67 opeka.module:123
 msgid "Popup widget"
 msgstr "Popup widget"
 
@@ -134,13 +136,13 @@ msgstr "Visning af brugerliste i 1-til-1 chat"
 msgid "Toggle the user list visibility in the pair chat. Check it if the user list should be visible"
 msgstr "Slår visning af brugerlisten i 1-til-1 chat til og fra"
 
-#: opeka.statistics.inc:10
+#: opeka.statistics.inc:10 js/opeka.views.js:0
 msgid "Date"
 msgstr "Dato"
 
 #: opeka.statistics.inc:11
-msgid "ID"
-msgstr "ID"
+msgid "Chat duration (min)"
+msgstr "Chat varighed (min)"
 
 #: opeka.statistics.inc:12 js/opeka.views.js:0
 msgid "Age"
@@ -158,31 +160,35 @@ msgstr "Spørgsmål"
 msgid "Answer"
 msgstr "Svar"
 
-#: opeka.statistics.inc:54;60
+#: opeka.statistics.inc:40
+msgid "-"
+msgstr "-"
+
+#: opeka.statistics.inc:63;69
 msgid "None"
 msgstr "Ingen"
 
-#: opeka.statistics.inc:62
+#: opeka.statistics.inc:71
 msgid "Total number of chat sessions: "
 msgstr "Samlet antal chat sessioner: "
 
-#: opeka.statistics.inc:63
+#: opeka.statistics.inc:72
 msgid "Total number of chat sessions last 4 weeks: "
 msgstr "Samlet antal chat sessioner de seneste 4 uger: "
 
-#: opeka.statistics.inc:70
+#: opeka.statistics.inc:79
 msgid "female"
 msgstr "pige"
 
-#: opeka.statistics.inc:73
+#: opeka.statistics.inc:82
 msgid "male"
 msgstr "dreng"
 
-#: opeka.statistics.inc:76 js/opeka.views.js:0;0
+#: opeka.statistics.inc:85 js/opeka.views.js:0;0
 msgid "non-binary"
 msgstr "Non-binær"
 
-#: opeka.statistics.inc:79
+#: opeka.statistics.inc:88
 msgid "gender not set"
 msgstr "køn ikke angivet"
 
@@ -242,29 +248,29 @@ msgstr "Se chat historik"
 msgid "Grants a user access to view opeka chat messages sent before user logged in."
 msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt før brugeren loggede på."
 
-#: opeka.module:170
+#: opeka.module:171
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:252
+#: opeka.module:253
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:270
+#: opeka.module:271
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:284;106
+#: opeka.module:285;107
 msgid "Header widget"
 msgstr "Header widget"
 
-#: opeka.module:53;60
+#: opeka.module:53;60 modules/opeka_invite/opeka_invite.module:375
 msgid "Chat"
 msgstr "Chat"
 
 #: opeka.module:67
-msgid "Opeka Chat - General settings"
-msgstr "Opeka Chat - generelle indstillinger"
+msgid "General settings"
+msgstr "Generelle indstillinger"
 
 #: opeka.module:68
 msgid "Provides settings for the chat service."
@@ -290,59 +296,59 @@ msgstr "Indstillinger for chatten."
 msgid "Chat statistics"
 msgstr "Chat-statistik"
 
-#: opeka.module:102
-msgid "Chat session statistics."
-msgstr "Statistik for chat-sessioner."
+#: opeka.module:101
+msgid "Chat session statistics"
+msgstr "Chatsession statistikker"
 
-#: opeka.module:107
+#: opeka.module:108
 msgid "Header widget code for third party sites."
 msgstr "Header widget kode til brug på eksterne sites."
 
-#: opeka.module:114
+#: opeka.module:115
 msgid "Inline widget"
 msgstr "Inline widget"
 
-#: opeka.module:115
+#: opeka.module:116
 msgid "Inline widget code for third party sites."
 msgstr "Inline widget kode til brug  på eksterne sites."
 
-#: opeka.module:123
+#: opeka.module:124
 msgid "Popup widget code for third party sites."
 msgstr "Popup widget til brug på eksterne sites."
 
-#: opeka.module:130
+#: opeka.module:131
 msgid "Foldout widget"
 msgstr "Folde-ud widget"
 
-#: opeka.module:131
+#: opeka.module:132
 msgid "Foldout widget code for third party sites."
 msgstr "Folde-ud widget kode til brug på eksterne sites."
 
-#: opeka.install:114;135;173
+#: opeka.install:120;141;179
 msgid "Enabling modules..."
 msgstr "Aktiverer moduler…"
 
-#: opeka.install:123
+#: opeka.install:129
 msgid "Reverting the opeka permissions"
 msgstr "Nulstil opeka tilladelserne"
 
-#: opeka.install:127;148;186
+#: opeka.install:133;154;192
 msgid "Some modules needed for feature reverting not enabled. Not reverting."
 msgstr "Der mangler moduler for at nulstillingen kan udføres. Nulstilling ikke udført."
 
-#: opeka.install:144;182
+#: opeka.install:150;188
 msgid "Reverting the opeka screening permissions"
 msgstr "Nulstil opeka screening tilladelser"
 
-#: opeka.install:158
+#: opeka.install:164
 msgid "Creating table opeka_stats."
 msgstr "Opretter opeka_stats tabellen"
 
-#: opeka.install:162
+#: opeka.install:168
 msgid "Moving existing data from table opeka_screening_submissions."
 msgstr "Flytter eksistererende data fra opeka_screening_submissions tabellen."
 
-#: opeka.install:169
+#: opeka.install:175
 msgid "Table opeka_stats already exists."
 msgstr "Tabellen opeka_stats eksisterer allerede."
 
@@ -357,6 +363,26 @@ msgstr "Sikkert, anonymt chatsystem, bygget med Drupal og dnode."
 #: js/opeka.common.js:0
 msgid "Page @path was not found."
 msgstr "Siden @path blev ikke fundet."
+
+#: js/opeka.common.js:0
+msgid "This chat has been cancelled by counselor."
+msgstr "Denne chat er blevet aflyst af en rådgiver."
+
+#: js/opeka.common.js:0
+msgid "Chat is cancelled"
+msgstr "Chatten er aflyst"
+
+#: js/opeka.common.js:0
+msgid "It seems your counselor is not available yet, try again in a few minutes"
+msgstr "Det ser ud til, at din rådgiver ikke er klar, prøv igen om et par minutter"
+
+#: js/opeka.common.js:0
+msgid "It seems your counselor is not available yet, try again in a few minutes."
+msgstr "Det ser ud til at din rådgiver ikke er klar, prøv igen om et par minutter."
+
+#: js/opeka.common.js:0
+msgid "Chat not available"
+msgstr "Chatten er ikke tilgængelig"
 
 #: js/opeka.common.js:0
 msgid "An error happened and you have lost the queue status, you can reload and join the queue again."
@@ -388,8 +414,7 @@ msgstr "Brugeren @user blev smidt ud af chatten."
 
 #: js/opeka.common.js:0
 msgid "The chat that you were in queue for has closed and your position in the queue with it. You are welcome to join again when the chat reopens or join a different chat room or queue."
-msgstr ""
-"Den chat du var i kø til er blevet lukket og du har derfor mistet din plads i køen. Du er velkommen til at prøve igen når chatten genåbner, eller prøve at logge på en anden chat."
+msgstr "Den chat du var i kø til er blevet lukket og du har derfor mistet din plads i køen. Du er velkommen til at prøve igen når chatten genåbner, eller prøve at logge på en anden chat."
 
 #: js/opeka.common.js:0
 msgid "Chat and queue closed"
@@ -481,9 +506,7 @@ msgstr "Skriv din besked her..."
 
 #: js/opeka.views.js:0
 msgid "When you are muted, you are not allowed to send any messages until the counselor decides to unmute you. You can see all the other messages and receive whispers."
-msgstr ""
-"Når du har fået frataget retten til tale kan du ikke skrive beskeder i chatten indtil rådgiveren giver dig retten tilbage. Du kan dog se alle beskeder og modtage private hviske-"
-"beskeder fra rådgiver."
+msgstr "Når du har fået frataget retten til tale kan du ikke skrive beskeder i chatten indtil rådgiveren giver dig retten tilbage. Du kan dog se alle beskeder og modtage private hviske-beskeder fra rådgiver."
 
 #: js/opeka.views.js:0
 msgid "The room is paused"
@@ -511,7 +534,7 @@ msgstr "Sæt auto-scrolling på pause."
 
 #: js/opeka.views.js:0
 msgid "@writers is typing..."
-msgstr "@writers skriver..."
+msgstr "skriver..."
 
 #: js/opeka.views.js:0
 msgid "@writers are typing..."
@@ -609,6 +632,10 @@ msgstr "Tænd chatten"
 msgid "Turn off chat"
 msgstr "Sluk chatten"
 
+#: js/opeka.views.js:0;0
+msgid "Create invitation link"
+msgstr "Opret invitationslink"
+
 #: js/opeka.views.js:0
 msgid "You are currently number @position in the queue. Number of rooms you can join from this queue: @rooms."
 msgstr "Du er i øjeblikket nummer @position i køen. Antal af rum du kan gå ind i fra denne kø: @rooms."
@@ -649,7 +676,7 @@ msgstr "Bekræft sletning af beskeder"
 msgid "Delete messages"
 msgstr "Slet beskeder"
 
-#: js/opeka.views.js:0;0;0;0;0;0;0;0
+#: js/opeka.views.js:0;0;0;0;0;0;0;0;0
 msgid "Cancel"
 msgstr "Annullér"
 
@@ -706,16 +733,16 @@ msgid "Outside Denmark/Scandinavia"
 msgstr "Udenfor Danmark/Skandinavien"
 
 #: js/opeka.views.js:0
-msgid "This field is for the topic of a group chat"
-msgstr "Dette felt bruges til at angive emnet på en evt. gruppechat."
+msgid "This field is for the topic of a group chat."
+msgstr "I dette felt kan emnet for en gruppechat angives."
 
 #: js/opeka.views.js:0
 msgid "Private queue"
 msgstr "Privat kø"
 
 #: js/opeka.views.js:0
-msgid "For training"
-msgstr "Øverum"
+msgid "Private room"
+msgstr "Privat rum"
 
 #: js/opeka.views.js:0
 msgid "Queue system"
@@ -730,12 +757,52 @@ msgid "users"
 msgstr "brugere"
 
 #: js/opeka.views.js:0;0;0
+msgid "Chat room"
+msgstr "Chatrum"
+
+#: js/opeka.views.js:0;0
+msgid "Create new private room"
+msgstr "Opret nyt privat rum"
+
+#: js/opeka.views.js:0;0;0
 msgid "Create new room"
 msgstr "Opret nyt chatrum"
 
-#: js/opeka.views.js:0;0
+#: js/opeka.views.js:0;0;0
 msgid "Discard changes"
 msgstr "Fortryd ændringer"
+
+#: js/opeka.views.js:0
+msgid "Group room"
+msgstr "Grupperum"
+
+#: js/opeka.views.js:0;0
+msgid "Chat name"
+msgstr "Chattens navn"
+
+#: js/opeka.views.js:0
+msgid "Time"
+msgstr "Tid"
+
+#: js/opeka.views.js:0
+msgid "Invitee name"
+msgstr "Den inviteredes navn"
+
+#: js/opeka.views.js:0
+msgid "Invitee email"
+msgstr "Den inviteredes email"
+
+#: js/opeka.views.js:0
+msgid "Personal message"
+msgstr "Personlig besked"
+
+#: js/opeka.views.js:0
+msgid "Counselor name"
+msgstr "Rådgivernavn"
+
+#: js/opeka.views.js:0;0
+msgid "Create new invitation"
+msgstr "Opret ny invitation"
 
 #: js/opeka.views.js:0
 msgid "Name"
@@ -756,6 +823,10 @@ msgstr "Bekræft: Forlad chatrum?"
 #: js/opeka.views.js:0
 msgid "Leave room"
 msgstr "Forlad chatten"
+
+#: js/opeka.views.js:0
+msgid "Invitations list"
+msgstr "Invitationsliste"
 
 #: js/opeka.views.js:0
 msgid "No rooms created"
@@ -786,10 +857,14 @@ msgid "Paused"
 msgstr "Sat på pause"
 
 #: js/opeka.views.js:0
+msgid "Private"
+msgstr "Privat"
+
+#: js/opeka.views.js:0
 msgid "The chat is closed. Users will not be able to log into chat rooms before it is opened by a coordinator"
 msgstr "Chatten er lukket. Brugere vil ikke kunne logge ind, før chatten er åbnet af en koordinator"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0;0
 msgid "Create room"
 msgstr "Opret chatrum"
 
@@ -813,9 +888,33 @@ msgstr "Luk vinduet"
 msgid "No queues created"
 msgstr "Ingen køer oprettet."
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0;0
 msgid "< Go back to room list"
 msgstr "< Gå tilbage til listen over chat-rum"
+
+#: js/opeka.views.js:0
+msgid "No invitations created"
+msgstr "Der er ikke oprettet nogle invitationer"
+
+#: js/opeka.views.js:0
+msgid "Open room"
+msgstr "Åben rummet"
+
+#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:376
+msgid "Date & time"
+msgstr "Dato & tidspunkt"
+
+#: js/opeka.views.js:0
+msgid "Actions"
+msgstr "Handlinger"
+
+#: js/opeka.views.js:0
+msgid "Token"
+msgstr "Symbol"
+
+#: js/opeka.views.js:0
+msgid "Do you really want to cancel this invitation? Thia action cannot be undone. The invitee will receive the cancellation message immediately."
+msgstr "Vil du virkelig aflyse denne invitation? Denne handling kan ikke fortrydes. Den inviterede vil modtage beskeden om aflysningen øjeblikkeligt."
 
 #: js/opeka.views.js:0
 msgid "Kick message"
@@ -861,7 +960,7 @@ msgstr "Denne besked kan kun ses af @name"
 msgid "Whisper @name"
 msgstr "Hvisk til @name"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:96;378
 msgid "Counselor"
 msgstr "Rådgiver"
 
@@ -929,6 +1028,154 @@ msgstr "Tilladelses-indstillinger for Opeka"
 msgid "Features"
 msgstr "Features"
 
+#: modules/opeka_invite/opeka_invite.module:52
+msgid "Administer invitation links"
+msgstr "Administrér invitationslinks"
+
+#: modules/opeka_invite/opeka_invite.module:53
+msgid "Allow managing invitations for Opeka chat."
+msgstr "Muliggør administration af invitationer til Opeka chat."
+
+#: modules/opeka_invite/opeka_invite.module:76
+msgid "This field cannot be empty"
+msgstr "Dette felt skal udfyldes"
+
+#: modules/opeka_invite/opeka_invite.module:94
+msgid "Chat with !name"
+msgstr "Chat med !name"
+
+#: modules/opeka_invite/opeka_invite.module:197
+msgid ""
+"<p>You can use the following tokens:</p> <ul><li><strong>[name]</strong> for invitee name,</li> \n"
+"      <li><strong>[mail]</strong> for invitee mail,</li> <li><strong>[chat]</strong> for chat name,</li> <li><strong>[date]</strong> for chat date and time,</li> \n"
+"      <li><strong>[link]</strong> for invitation link,</li> <li><strong>[counselor]</strong> for counselor name,</li>\n"
+"      <li><strong>[message]</strong> for personal message with the prefix (see below).</li></ul>"
+msgstr ""
+"<p>Du kan bruge følgende tokens:</p> <ul><li><strong>[name]</strong> for den inviteredes navn,</li> \n"
+"      <li><strong>[mail]</strong> for den inviteredes mail,</li> <li><strong>[chat]</strong> for chat navn,</li> <li><strong>[date]</strong> for chat dato og tidspunkt,</li> \n"
+"      <li><strong>[link]</strong> for invitationslink,</li> <li><strong>[counselor]</strong> for rådgivernavn,</li>\n"
+"      <li><strong>[message]</strong> for en personlig besked med præfix (se herunder).</li></ul>"
+
+#: modules/opeka_invite/opeka_invite.module:207
+msgid "Invitation email"
+msgstr "Invitationsemail"
+
+#: modules/opeka_invite/opeka_invite.module:212;236
+msgid "Subject"
+msgstr "Emne"
+
+#: modules/opeka_invite/opeka_invite.module:218;242
+msgid "Body"
+msgstr "Brødtekst"
+
+#: modules/opeka_invite/opeka_invite.module:224
+msgid "Personal message prefix"
+msgstr "Personlig besked præfix"
+
+#: modules/opeka_invite/opeka_invite.module:225
+msgid "If a counselor leaves a personal message, the prefix will be displayed before the message."
+msgstr "Hvis en rådgiver efterlader en personlig besked, vil præfixet vises før beskeden."
+
+#: modules/opeka_invite/opeka_invite.module:231
+msgid "Cancellation email"
+msgstr "Aflysningsmail"
+
+#: modules/opeka_invite/opeka_invite.module:247
+msgid "Expiration time"
+msgstr "Udløbstidspunkt"
+
+#: modules/opeka_invite/opeka_invite.module:248
+msgid "The invites will be deleted after this time past since their scheduled date and time."
+msgstr "Invitationerne vil blive slettet når det planlagte tidspunkt er overskredet med dette tidsinterval."
+
+#: modules/opeka_invite/opeka_invite.module:251
+msgid "Never delete"
+msgstr "Slet aldrig"
+
+#: modules/opeka_invite/opeka_invite.module:252
+msgid "1 hour"
+msgstr "1 time"
+
+#: modules/opeka_invite/opeka_invite.module:253
+msgid "1 hours"
+msgstr "1 time"
+
+#: modules/opeka_invite/opeka_invite.module:254
+msgid "12 hours"
+msgstr "12 timer"
+
+#: modules/opeka_invite/opeka_invite.module:255
+msgid "1 day"
+msgstr "1 dag"
+
+#: modules/opeka_invite/opeka_invite.module:256
+msgid "3 days"
+msgstr "3 dage"
+
+#: modules/opeka_invite/opeka_invite.module:257
+msgid "1 week"
+msgstr "1 uge"
+
+#: modules/opeka_invite/opeka_invite.module:258
+msgid "2 weeks"
+msgstr "2 uger"
+
+#: modules/opeka_invite/opeka_invite.module:259
+msgid "4 weeks"
+msgstr "4 uger"
+
+#: modules/opeka_invite/opeka_invite.module:363
+msgid "Active"
+msgstr "Aktiv"
+
+#: modules/opeka_invite/opeka_invite.module:363
+msgid "Cancelled"
+msgstr "Aflyst"
+
+#: modules/opeka_invite/opeka_invite.module:368
+msgid "link"
+msgstr "link"
+
+#: modules/opeka_invite/opeka_invite.module:374
+msgid "Invite ID"
+msgstr "Invitations ID"
+
+#: modules/opeka_invite/opeka_invite.module:377
+msgid "Status"
+msgstr "Status"
+
+#: modules/opeka_invite/opeka_invite.module:379
+msgid "Invitee"
+msgstr "Inviterede"
+
+#: modules/opeka_invite/opeka_invite.module:380
+msgid "E-mail"
+msgstr "E-mail"
+
+#: modules/opeka_invite/opeka_invite.module:381
+msgid "Personal note"
+msgstr "Personlig note"
+
+#: modules/opeka_invite/opeka_invite.module:382
+msgid "Link"
+msgstr "Link"
+
+#: modules/opeka_invite/opeka_invite.module:389
+msgid "No invitations have been created yet."
+msgstr "Der er ikke blevet oprettet nogle invitationer endnu."
+
+#: modules/opeka_invite/opeka_invite.module:13
+msgid "Invitation settings"
+msgstr "Invitationsindstillinger"
+
+#: modules/opeka_invite/opeka_invite.module:37 modules/opeka_invite/opeka_invite.info:0
+msgid "Opeka Invitations"
+msgstr "Opeka Invitationer"
+
+#: modules/opeka_invite/opeka_invite.info:0
+msgid "An Opeka submodule, allowing to create the invitations to private channels."
+msgstr "Et Opeka submodul, der gør det muligt at oprette invitationer til private rum."
+
 #: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:16
 msgid "Adjust opening hours here by defining the time intervals when the chat will be open."
 msgstr "Angiv åbningstider her ved at tilføje tidsintervallerne, hvor chatten er åben."
@@ -985,13 +1232,13 @@ msgstr "Torsdag"
 msgid "Friday"
 msgstr "Fredag"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.module:29
-msgid "Provides management options for the Opeka opening hours."
-msgstr "Administrationsmuligheder for Opeka åbningstider."
-
-#: modules/opeka_opening_hours/opeka_opening_hours.module:31
+#: modules/opeka_opening_hours/opeka_opening_hours.module:30
 msgid "Opening hours"
 msgstr "Åbningstider"
+
+#: modules/opeka_opening_hours/opeka_opening_hours.module:31
+msgid "Provides management options for the Opeka opening hours."
+msgstr "Administrationsmuligheder for Opeka åbningstider."
 
 #: modules/opeka_opening_hours/opeka_opening_hours.info:0
 msgid "Opeka Opening Hours"
@@ -1009,7 +1256,7 @@ msgstr "Screening spørgsmål"
 msgid "The question you want to pose to the users."
 msgstr "Spørgsmålet, du vil stille dine brugere."
 
-#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:85
+#: modules/opeka_screening/opeka_screening.admin.inc:29 modules/opeka_screening/opeka_screening.module:86
 msgid "Question..."
 msgstr "Spørgsmål…"
 
@@ -1029,11 +1276,11 @@ msgstr "Administrér Opeka screening spørgsmål"
 msgid "Grants a user access to the admin backend for managing the Opeka Screening Questions."
 msgstr "Tildeler en bruger adgang til de avancerede indstillinger for Opeka screening spørgsmål."
 
-#: modules/opeka_screening/opeka_screening.module:52
+#: modules/opeka_screening/opeka_screening.module:30
 msgid "Screening Questions"
 msgstr "Screening spørgsmål"
 
-#: modules/opeka_screening/opeka_screening.module:55
+#: modules/opeka_screening/opeka_screening.module:33
 msgid "Provides settings for the screening questions."
 msgstr "Administration for Screening spørgsmål."
 

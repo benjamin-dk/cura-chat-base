@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-06-19 21:03+0200\n"
-"PO-Revision-Date: 2017-06-19 21:59+0200\n"
+"POT-Creation-Date: 2017-06-26 11:35+0200\n"
+"PO-Revision-Date: 2017-06-26 11:38+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -264,7 +264,7 @@ msgstr "Der er ingen information om åbningstider tilgængelig."
 msgid "Header widget"
 msgstr "Header widget"
 
-#: opeka.module:53;60 modules/opeka_invite/opeka_invite.module:375
+#: opeka.module:53;60 modules/opeka_invite/opeka_invite.module:396
 msgid "Chat"
 msgstr "Chat"
 
@@ -900,7 +900,7 @@ msgstr "Der er ikke oprettet nogle invitationer"
 msgid "Open room"
 msgstr "Åben rummet"
 
-#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:376
+#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:397
 msgid "Date & time"
 msgstr "Dato & tidspunkt"
 
@@ -960,7 +960,7 @@ msgstr "Denne besked kan kun ses af @name"
 msgid "Whisper @name"
 msgstr "Hvisk til @name"
 
-#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:96;378
+#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:97;399
 msgid "Counselor"
 msgstr "Rådgiver"
 
@@ -1036,15 +1036,15 @@ msgstr "Administrér invitationslinks"
 msgid "Allow managing invitations for Opeka chat."
 msgstr "Muliggør administration af invitationer til Opeka chat."
 
-#: modules/opeka_invite/opeka_invite.module:76
+#: modules/opeka_invite/opeka_invite.module:77
 msgid "This field cannot be empty"
 msgstr "Dette felt skal udfyldes"
 
-#: modules/opeka_invite/opeka_invite.module:94
+#: modules/opeka_invite/opeka_invite.module:95
 msgid "Chat with !name"
 msgstr "Chat med !name"
 
-#: modules/opeka_invite/opeka_invite.module:197
+#: modules/opeka_invite/opeka_invite.module:208
 msgid ""
 "<p>You can use the following tokens:</p> <ul><li><strong>[name]</strong> for invitee name,</li> \n"
 "      <li><strong>[mail]</strong> for invitee mail,</li> <li><strong>[chat]</strong> for chat name,</li> <li><strong>[date]</strong> for chat date and time,</li> \n"
@@ -1056,111 +1056,127 @@ msgstr ""
 "      <li><strong>[link]</strong> for invitationslink,</li> <li><strong>[counselor]</strong> for rådgivernavn,</li>\n"
 "      <li><strong>[message]</strong> for en personlig besked med præfix (se herunder).</li></ul>"
 
-#: modules/opeka_invite/opeka_invite.module:207
+#: modules/opeka_invite/opeka_invite.module:218
 msgid "Invitation email"
 msgstr "Invitationsemail"
 
-#: modules/opeka_invite/opeka_invite.module:212;236
+#: modules/opeka_invite/opeka_invite.module:223;247
 msgid "Subject"
 msgstr "Emne"
 
-#: modules/opeka_invite/opeka_invite.module:218;242
+#: modules/opeka_invite/opeka_invite.module:229;253
 msgid "Body"
 msgstr "Brødtekst"
 
-#: modules/opeka_invite/opeka_invite.module:224
+#: modules/opeka_invite/opeka_invite.module:235
 msgid "Personal message prefix"
 msgstr "Personlig besked præfix"
 
-#: modules/opeka_invite/opeka_invite.module:225
+#: modules/opeka_invite/opeka_invite.module:236
 msgid "If a counselor leaves a personal message, the prefix will be displayed before the message."
 msgstr "Hvis en rådgiver efterlader en personlig besked, vil præfixet vises før beskeden."
 
-#: modules/opeka_invite/opeka_invite.module:231
+#: modules/opeka_invite/opeka_invite.module:242
 msgid "Cancellation email"
 msgstr "Aflysningsmail"
 
-#: modules/opeka_invite/opeka_invite.module:247
+#: modules/opeka_invite/opeka_invite.module:258
 msgid "Expiration time"
 msgstr "Udløbstidspunkt"
 
-#: modules/opeka_invite/opeka_invite.module:248
+#: modules/opeka_invite/opeka_invite.module:259
 msgid "The invites will be deleted after this time past since their scheduled date and time."
 msgstr "Invitationerne vil blive slettet når det planlagte tidspunkt er overskredet med dette tidsinterval."
 
-#: modules/opeka_invite/opeka_invite.module:251
+#: modules/opeka_invite/opeka_invite.module:262
 msgid "Never delete"
 msgstr "Slet aldrig"
 
-#: modules/opeka_invite/opeka_invite.module:252
+#: modules/opeka_invite/opeka_invite.module:263
 msgid "1 hour"
 msgstr "1 time"
 
-#: modules/opeka_invite/opeka_invite.module:253
-msgid "1 hours"
-msgstr "1 time"
+#: modules/opeka_invite/opeka_invite.module:264
+msgid "6 hours"
+msgstr "6 timer"
 
-#: modules/opeka_invite/opeka_invite.module:254
+#: modules/opeka_invite/opeka_invite.module:265
 msgid "12 hours"
 msgstr "12 timer"
 
-#: modules/opeka_invite/opeka_invite.module:255
+#: modules/opeka_invite/opeka_invite.module:266
 msgid "1 day"
 msgstr "1 dag"
 
-#: modules/opeka_invite/opeka_invite.module:256
+#: modules/opeka_invite/opeka_invite.module:267
 msgid "3 days"
 msgstr "3 dage"
 
-#: modules/opeka_invite/opeka_invite.module:257
+#: modules/opeka_invite/opeka_invite.module:268
 msgid "1 week"
 msgstr "1 uge"
 
-#: modules/opeka_invite/opeka_invite.module:258
+#: modules/opeka_invite/opeka_invite.module:269
 msgid "2 weeks"
 msgstr "2 uger"
 
-#: modules/opeka_invite/opeka_invite.module:259
+#: modules/opeka_invite/opeka_invite.module:270
 msgid "4 weeks"
 msgstr "4 uger"
 
-#: modules/opeka_invite/opeka_invite.module:363
+#: modules/opeka_invite/opeka_invite.module:337
+msgid "Copy of invitation: "
+msgstr "Kopi af invitation: "
+
+#: modules/opeka_invite/opeka_invite.module:338
+msgid "The following invitation has just been sent to @invitee: "
+msgstr "Den følgende invitation er lige blevet sendt til @invitee: "
+
+#: modules/opeka_invite/opeka_invite.module:346
+msgid "Copy of cancellation: "
+msgstr "Kopi af aflysning: "
+
+#: modules/opeka_invite/opeka_invite.module:347
+msgid "The following cancellation has just been sent to @invitee: "
+msgstr "Den følgende aflysning er lige blevet sendt til @invitee: "
+
+#: modules/opeka_invite/opeka_invite.module:384
 msgid "Active"
 msgstr "Aktiv"
 
-#: modules/opeka_invite/opeka_invite.module:363
+#: modules/opeka_invite/opeka_invite.module:384
 msgid "Cancelled"
 msgstr "Aflyst"
 
-#: modules/opeka_invite/opeka_invite.module:368
+#: modules/opeka_invite/opeka_invite.module:389
 msgid "link"
 msgstr "link"
 
-#: modules/opeka_invite/opeka_invite.module:374
+#: modules/opeka_invite/opeka_invite.module:395
 msgid "Invite ID"
 msgstr "Invitations ID"
 
-#: modules/opeka_invite/opeka_invite.module:377
+#: modules/opeka_invite/opeka_invite.module:398
 msgid "Status"
 msgstr "Status"
 
-#: modules/opeka_invite/opeka_invite.module:379
+#: modules/opeka_invite/opeka_invite.module:400
 msgid "Invitee"
 msgstr "Inviterede"
 
-#: modules/opeka_invite/opeka_invite.module:380
+#: modules/opeka_invite/opeka_invite.module:401
 msgid "E-mail"
 msgstr "E-mail"
 
-#: modules/opeka_invite/opeka_invite.module:381
+#: modules/opeka_invite/opeka_invite.module:402
 msgid "Personal note"
 msgstr "Personlig note"
 
-#: modules/opeka_invite/opeka_invite.module:382
+#: modules/opeka_invite/opeka_invite.module:403
 msgid "Link"
 msgstr "Link"
 
-#: modules/opeka_invite/opeka_invite.module:389
+#: modules/opeka_invite/opeka_invite.module:410
 msgid "No invitations have been created yet."
 msgstr "Der er ikke blevet oprettet nogle invitationer endnu."
 

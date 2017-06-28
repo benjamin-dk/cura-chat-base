@@ -534,7 +534,7 @@ msgstr "Sæt auto-scrolling på pause."
 
 #: js/opeka.views.js:0
 msgid "@writers is typing..."
-msgstr "skriver..."
+msgstr "@writers skriver..."
 
 #: js/opeka.views.js:0
 msgid "@writers are typing..."

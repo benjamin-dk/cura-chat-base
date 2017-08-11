@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-07-05 13:05+0200\n"
-"PO-Revision-Date: 2017-07-05 13:10+0200\n"
+"POT-Creation-Date: 2017-08-11 09:43+0200\n"
+"PO-Revision-Date: 2017-08-11 09:57+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -135,6 +135,54 @@ msgstr "Visning af brugerliste i 1-til-1 chat"
 #: opeka.admin.inc:61
 msgid "Toggle the user list visibility in the pair chat. Check it if the user list should be visible"
 msgstr "Slår visning af brugerlisten i 1-til-1 chat til og fra"
+
+#: opeka.admin.inc:68
+msgid "Enter site settings"
+msgstr "Godkend betingelser for adgang til chat"
+
+#: opeka.admin.inc:76
+msgid "Enter site feature"
+msgstr "Godkend betingelser"
+
+#: opeka.admin.inc:77
+msgid "Enable the enter site feature"
+msgstr "Aktivér godkend betingelser"
+
+#: opeka.admin.inc:84
+msgid "Enter site message"
+msgstr "Besked vedr. godkendelse af betingelser"
+
+#: opeka.admin.inc:85
+msgid "A disclaimer message above the enter site button."
+msgstr "En forklarende tekst over godkendelses-knappen."
+
+#: opeka.admin.inc:87
+msgid "Chat 100% anonymously with counselors from X municipality. NOTE: You can only chat if you are living in this municipality"
+msgstr "Chat 100% anonymt med ungerådgivere fra X kommune. OBS: Det kræver, at du selv bor i kommunen"
+
+#: opeka.admin.inc:93
+msgid "Enter site button text"
+msgstr "Tekst på godkendelsesknappen"
+
+#: opeka.admin.inc:94
+msgid "Text on the enter site button"
+msgstr "Den tekst, som vises på godkendelsesknappen"
+
+#: opeka.admin.inc:96
+msgid "Yes, I am from X municipality"
+msgstr "Ja, jeg er fra X kommune"
+
+#: opeka.admin.inc:102
+msgid "Leave site link text"
+msgstr "Tekst på “Forlad site” linket"
+
+#: opeka.admin.inc:103
+msgid "Text on the leave site leave"
+msgstr "Teksten på “Forlad site” linket"
+
+#: opeka.admin.inc:105
+msgid "I am from another municipality, what do I do?"
+msgstr "Jeg er fra en anden kommune, hvad gør jeg?"
 
 #: opeka.statistics.inc:10 js/opeka.views.js:0
 msgid "Date"
@@ -252,15 +300,15 @@ msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:253
+#: opeka.module:261
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:271
+#: opeka.module:279
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:285;107
+#: opeka.module:293;107
 msgid "Header widget"
 msgstr "Header widget"
 

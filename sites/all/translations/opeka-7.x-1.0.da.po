@@ -12,6 +12,7 @@
 #  opeka.install: n/a
 #  opeka.info: n/a
 #  js/opeka.common.js: n/a
+#  widgets/js/chatstatus.js: n/a
 #  modules/features/opeka_features_permissions/opeka_features_permissions.info: n/a
 #  modules/opeka_invite/opeka_invite.info: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.admin.inc: n/a
@@ -20,13 +21,12 @@
 #  modules/opeka_screening/opeka_screening.admin.inc: n/a
 #  modules/opeka_screening/opeka_screening.module: n/a
 #  modules/opeka_screening/opeka_screening.info: n/a
-#  widgets/js/chatstatus.js: n/a
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-08-11 09:43+0200\n"
-"PO-Revision-Date: 2017-08-11 09:57+0200\n"
+"POT-Creation-Date: 2017-08-20 21:39+0200\n"
+"PO-Revision-Date: 2017-08-20 21:47+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -100,15 +100,23 @@ msgstr "Popup widget"
 msgid "If the popup or the multi widgets are used, please provide the URL of the client site, eg. http://mysite.com."
 msgstr "Hvis popup- eller multichat widgets er i brug, indtast her navnet på kundens site, f.eks. http://mysite.com."
 
-#: opeka.admin.advanced.inc:75
+#: opeka.admin.advanced.inc:75 opeka.module:138
+msgid "Mixed widget"
+msgstr "Mixed widget"
+
+#: opeka.admin.advanced.inc:76
+msgid "If the mixed widget is used, please provide the URL of the jsonp resource, e.g. https://mysite.com/resource?."
+msgstr "Hvis mixed widget skal benyttes, angiv da URLen for jsonp-ressourcen, f.eks. https://mysite.com/resource?."
+
+#: opeka.admin.advanced.inc:83
 msgid "Custom css file for widget styles"
 msgstr "Tilpasset css fil til widget styling"
 
-#: opeka.admin.advanced.inc:76
+#: opeka.admin.advanced.inc:84
 msgid "URL to a custom css file for the widgets."
 msgstr "URL til en tilpasset css fil til widgets."
 
-#: opeka.admin.advanced.inc:90
+#: opeka.admin.advanced.inc:98
 msgid "The URL in the custom CSS field returned 404 not found. Please make sure the the URL is correct."
 msgstr "URLen i \"Tilpasset CSS-fil\"-feltet returnerede \"404 ikke fundet\". Check om URLen er korrekt."
 
@@ -177,12 +185,20 @@ msgid "Leave site link text"
 msgstr "Tekst på “Forlad site” linket"
 
 #: opeka.admin.inc:103
-msgid "Text on the leave site leave"
-msgstr "Teksten på “Forlad site” linket"
+msgid "Text on the leave site link"
+msgstr "Teksten på forlad site-linket"
 
 #: opeka.admin.inc:105
 msgid "I am from another municipality, what do I do?"
 msgstr "Jeg er fra en anden kommune, hvad gør jeg?"
+
+#: opeka.admin.inc:111
+msgid "Signin footnote"
+msgstr "Log ind fodnote"
+
+#: opeka.admin.inc:112
+msgid "Footnote below the signin form."
+msgstr "Fodnote under Log ind formularen"
 
 #: opeka.statistics.inc:10 js/opeka.views.js:0
 msgid "Date"
@@ -296,19 +312,19 @@ msgstr "Se chat historik"
 msgid "Grants a user access to view opeka chat messages sent before user logged in."
 msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt før brugeren loggede på."
 
-#: opeka.module:171
+#: opeka.module:178
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:261
+#: opeka.module:271
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:279
+#: opeka.module:289
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:293;107
+#: opeka.module:303;107
 msgid "Header widget"
 msgstr "Header widget"
 
@@ -371,6 +387,10 @@ msgstr "Folde-ud widget"
 #: opeka.module:132
 msgid "Foldout widget code for third party sites."
 msgstr "Folde-ud widget kode til brug på eksterne sites."
+
+#: opeka.module:139
+msgid "Mixed widget code for third party sites."
+msgstr "Mixed widget kode til inklusion på tredjeparts-sider."
 
 #: opeka.install:120;141;179
 msgid "Enabling modules..."
@@ -1044,9 +1064,9 @@ msgstr "Jeg ønsker ikke at svare."
 msgid "Access code"
 msgstr "Adgangskode"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 widgets/js/chatstatus.js:0
 msgid "The chat is closed"
-msgstr "Chatten er lukket lige nu"
+msgstr "Chatten er lukket"
 
 #: js/opeka.views.js:0
 msgid "Loading..."
@@ -1377,16 +1397,12 @@ msgid "The group chat"
 msgstr "Gruppechatten"
 
 #: widgets/js/chatstatus.js:0
-msgid "Start chat"
-msgstr "Åben chatten"
+msgid "The chat is open"
+msgstr "Chatten er åben"
 
 #: widgets/js/chatstatus.js:0
-msgid "Occupied"
-msgstr "Optaget"
-
-#: widgets/js/chatstatus.js:0
-msgid "Closed"
-msgstr "Lukket"
+msgid "The chat is occupied"
+msgstr "Chatten er optaget"
 
 #: widgets/js/chatstatus.js:0
 msgid "Error connecting."

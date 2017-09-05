@@ -27,5 +27,7 @@ sites/all/libraries/simplehtmldom
 sites/all/modules/simplehtmldom
 sites/all/modules/stage_file_proxy
 sites/all/modules/examples
+sites/all/modules/backup_migrate
+sites/all/modules/module_missing_message_fixer
 .DS_Store
 

@@ -1047,7 +1047,6 @@ function _drupal_get_filename_perform_file_scan($type, $name) {
   else {
     $extension = $type;
   }
-
   // Check if we had already scanned this directory/extension combination.
   if (!isset($dirs[$dir][$extension])) {
     // Log that we have now scanned this directory/extension combination

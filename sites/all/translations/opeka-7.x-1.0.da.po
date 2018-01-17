@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-01-15 10:43+0100\n"
-"PO-Revision-Date: 2018-01-15 11:31+0100\n"
+"POT-Creation-Date: 2018-01-17 12:47+0100\n"
+"PO-Revision-Date: 2018-01-17 12:50+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -1135,6 +1135,18 @@ msgstr "Anonymous!x"
 #: js/opeka.views.js:0
 msgid "Do you really want to leave this page?"
 msgstr "Ønsker du at forlade denne side?"
+
+#: js/opeka.views.js:0
+msgid "1 guest"
+msgid_plural "@count guests"
+msgstr[0] "1 bruger"
+msgstr[1] "@count brugere"
+
+#: js/opeka.views.js:0
+msgid "1 counselor"
+msgid_plural "@count counselors"
+msgstr[0] "1 rådgiver"
+msgstr[1] "@count rådgivere"
 
 #: modules/features/opeka_features_permissions/opeka_features_permissions.info:0
 msgid "Opeka Features - permissions"

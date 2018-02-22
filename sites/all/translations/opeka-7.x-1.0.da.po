@@ -4,8 +4,8 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  opeka.admin.advanced.inc: n/a
-#  opeka.module: n/a
 #  opeka.admin.inc: n/a
+#  opeka.module: n/a
 #  opeka.statistics.inc: n/a
 #  js/opeka.views.js: n/a
 #  modules/opeka_invite/opeka_invite.module: n/a
@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-01-17 12:47+0100\n"
-"PO-Revision-Date: 2018-01-18 10:07+0100\n"
+"POT-Creation-Date: 2018-02-22 10:40+0100\n"
+"PO-Revision-Date: 2018-02-22 10:50+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -45,212 +45,236 @@ msgid "URL to the Opeka connect.js javascript, eg. http://localhost:3000/connect
 msgstr "URL to the Opeka connect.js javascriptet, f.eks. http://localhost:3000/connect.js"
 
 #: opeka.admin.advanced.inc:19
+msgid "Opeka chat name settings"
+msgstr "Opera chat-navne"
+
+#: opeka.admin.advanced.inc:27
 msgid "Pair chat name"
 msgstr "1-til-1 chat navn"
 
-#: opeka.admin.advanced.inc:20
+#: opeka.admin.advanced.inc:28
 msgid "The pair chat name can be shown in some chat widgets"
 msgstr "1-til-1 chat-navnet vises i visse chat widgets"
 
-#: opeka.admin.advanced.inc:27
+#: opeka.admin.advanced.inc:35
 msgid "Group chat name"
 msgstr "Gruppechat-navn"
 
-#: opeka.admin.advanced.inc:28
+#: opeka.admin.advanced.inc:36
 msgid "The group chat name can be shown in some chat widgets"
 msgstr "Gruppechat-navnet vises i visse chat widgets"
 
-#: opeka.admin.advanced.inc:35
+#: opeka.admin.advanced.inc:43
 msgid "Login sound file"
 msgstr "Login-lyd fil"
 
-#: opeka.admin.advanced.inc:36
+#: opeka.admin.advanced.inc:44
 msgid "URL to a sound file that is played for the counselor when a client logs in."
 msgstr "URL til lyd-fil der afspilles for rådgivere når en bruger logger ind."
 
-#: opeka.admin.advanced.inc:43
+#: opeka.admin.advanced.inc:51
+msgid "Pair chat user list visibility"
+msgstr "Visning af brugerliste i 1-til-1 chat"
+
+#: opeka.admin.advanced.inc:52
+msgid "Toggle the user list visibility in the pair chat. Check it if the user list should be visible"
+msgstr "Slår visning af brugerlisten i 1-til-1 chat til og fra"
+
+#: opeka.admin.advanced.inc:59
+msgid "Clients can see the \"User is writing\" message"
+msgstr "Klienter kan se “Brugeren skriver”-beskeden"
+
+#: opeka.admin.advanced.inc:60
+msgid "Toggle the ability for clients to see the \"User is writing\" message. Check it if the clients should be able to see the message."
+msgstr "Afgør om klienter skal kunne se “Brugeren skriver”-beskeder. Afmærk feltet, hvis klienter skal kunne se beskederne."
+
+#: opeka.admin.advanced.inc:67
+msgid "Opeka feedback settings"
+msgstr "Opeka feedback-indstillinger"
+
+#: opeka.admin.advanced.inc:75
 msgid "Feedback URL"
 msgstr "Feedback URL"
 
-#: opeka.admin.advanced.inc:44
+#: opeka.admin.advanced.inc:76
 msgid "URL to a feedback page, e.g. a Google Form, where clients can enter evaluation data after a chat."
 msgstr "URL til feedback-side, f.eks. en google formular, hvor brugere kan evaluere chat-forløbet efter en chat er overstået."
 
-#: opeka.admin.advanced.inc:51
+#: opeka.admin.advanced.inc:83
 msgid "Group Chat feedback URL"
 msgstr "Group Chat feedback URL"
 
-#: opeka.admin.advanced.inc:52
+#: opeka.admin.advanced.inc:84
 msgid "URL to a feedback page, e.g. a Google Form, where group chat clients can enter evaluation data after a chat."
 msgstr "URL til feedback-side, f.eks. en google formular, hvor gruppechat-brugere kan evaluere chat-forløbet efter en chat er overstået."
 
-#: opeka.admin.advanced.inc:59
+#: opeka.admin.advanced.inc:91
 msgid "Automatic redirection to questionnaire in external window?"
 msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 
-#: opeka.admin.advanced.inc:60
+#: opeka.admin.advanced.inc:92
 msgid "Check this box if the feedback form should be opened automatically for clients."
 msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.advanced.inc:67 opeka.module:123
+#: opeka.admin.advanced.inc:99 opeka.admin.inc:122
+msgid "Opeka widget settings"
+msgstr "Opera widget indstillinger"
+
+#: opeka.admin.advanced.inc:107 opeka.module:123
 msgid "Popup widget"
 msgstr "Popup widget"
 
-#: opeka.admin.advanced.inc:68
+#: opeka.admin.advanced.inc:108
 msgid "If the popup or the multi widgets are used, please provide the URL of the client site, eg. http://mysite.com."
 msgstr "Hvis popup- eller multichat widgets er i brug, indtast her navnet på kundens site, f.eks. http://mysite.com."
 
-#: opeka.admin.advanced.inc:75 opeka.module:138
+#: opeka.admin.advanced.inc:115 opeka.module:138
 msgid "Mixed widget"
 msgstr "Mixed widget"
 
-#: opeka.admin.advanced.inc:76
+#: opeka.admin.advanced.inc:116
 msgid "If the mixed widget is used, please provide the URL of the jsonp resource, e.g. https://mysite.com/resource?."
 msgstr "Hvis mixed widget anvendes, angiv da URLen til jsonp-ressourcen, f.eks. https://mysite.com/resource?."
 
-#: opeka.admin.advanced.inc:83
+#: opeka.admin.advanced.inc:123
 msgid "Custom css file for widget styles"
 msgstr "Tilpasset css fil til widget styling"
 
-#: opeka.admin.advanced.inc:84
+#: opeka.admin.advanced.inc:124
 msgid "URL to a custom css file for the widgets."
 msgstr "URL til en tilpasset css fil til widgets."
 
-#: opeka.admin.advanced.inc:98
+#: opeka.admin.advanced.inc:138
 msgid "The URL in the custom CSS field returned 404 not found. Please make sure the the URL is correct."
 msgstr "URLen i \"Tilpasset CSS-fil\"-feltet returnerede \"404 ikke fundet\". Check om URLen er korrekt."
 
 #: opeka.admin.inc:44
-msgid "1-to-1 chat registration form"
-msgstr "1-to-1 chat registrations-formular"
-
-#: opeka.admin.inc:45
-msgid "URL to a registration form, where counselors can enter data after a 1-to-1 chat."
-msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet 1-til-1 chat."
+msgid "\"Enter site\" settings"
+msgstr "“Godkend betingelser” indstillinger"
 
 #: opeka.admin.inc:52
-msgid "Group chat registration form"
-msgstr "Gruppechat registreringsside"
+msgid "Enable \"Enter site\" feature"
+msgstr "Aktivér “Godkend betingelser” funktionalitet"
 
 #: opeka.admin.inc:53
-msgid "URL to a registration form, where counselors can enter data after a group chat."
-msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet gruppe-chat."
+msgid "Enable the \"Enter site\" feature"
+msgstr "Aktivér “Godkend betingelser” funktionalitet"
 
 #: opeka.admin.inc:60
-msgid "Pair chat user list visibility"
-msgstr "Visning af brugerliste i 1-til-1 chat"
+msgid "\"Enter site\" message"
+msgstr "“Godkend betingelser” besked"
 
 #: opeka.admin.inc:61
-msgid "Toggle the user list visibility in the pair chat. Check it if the user list should be visible"
-msgstr "Slår visning af brugerlisten i 1-til-1 chat til og fra"
+msgid "A disclaimer message above the \"Enter site\" button."
+msgstr "En informationstekst over “Godkend betingelser”-knappen"
 
-#: opeka.admin.inc:68
-msgid "Clients can see the \"User is writing\" message"
-msgstr "Klienter kan se “Brugeren skriver”-beskeden"
-
-#: opeka.admin.inc:69
-msgid "Toggle the ability for clients to see the \"User is writing\" message. Check it if the clients should be able to see the message."
-msgstr "Afgør om klienter skal kunne se “Brugeren skriver”-beskeder. Afmærk feltet, hvis klienter skal kunne se beskederne."
-
-#: opeka.admin.inc:76
-msgid "Subtext for the header widget button"
-msgstr "Undertekst til header widget-knappen"
-
-#: opeka.admin.inc:77
-msgid "Text below the header widget button"
-msgstr "Tekst under header widget-knappen"
-
-#: opeka.admin.inc:79
-msgid "Chats are for young people aged 9 to 23 years."
-msgstr "Chatten er for unge mellem 9 og 23 år."
-
-#: opeka.admin.inc:85
-msgid "Opeka popup widget settings"
-msgstr "Opeka popup widget settings"
-
-#: opeka.admin.inc:93
-msgid "Text for the popup widget"
-msgstr "Tekst til popup widget"
-
-#: opeka.admin.inc:94
-msgid "Text on the popup widget"
-msgstr "Tekst på popup widget"
-
-#: opeka.admin.inc:96
-msgid "Chat anonymously with a counselor"
-msgstr "Chat anonymt med en rådgiver"
-
-#: opeka.admin.inc:102;103
-msgid "Text for the link"
-msgstr "Tekst til linket"
-
-#: opeka.admin.inc:111;112
-msgid "URL for the link"
-msgstr "URL til linket"
-
-#: opeka.admin.inc:119
-msgid "Enter site settings"
-msgstr "Godkend betingelser for adgang til chat"
-
-#: opeka.admin.inc:127
-msgid "Enter site feature"
-msgstr "Godkend betingelser"
-
-#: opeka.admin.inc:128
-msgid "Enable the enter site feature"
-msgstr "Aktivér “Godkend betingelser for adgang til chat”-funktion"
-
-#: opeka.admin.inc:135
-msgid "Enter site message"
-msgstr "Besked vedr. godkendelse af betingelser"
-
-#: opeka.admin.inc:136
-msgid "A disclaimer message above the enter site button."
-msgstr "En forklarende tekst over godkendelses-knappen."
-
-#: opeka.admin.inc:138
+#: opeka.admin.inc:63
 msgid "Chat 100% anonymously with counselors from X municipality. NOTE: You can only chat if you are living in this municipality"
 msgstr "Chat 100% anonymt med ungerådgivere fra X kommune. OBS: Det kræver, at du selv bor i kommunen"
 
-#: opeka.admin.inc:144
-msgid "Enter site button text"
-msgstr "Tekst på godkendelsesknappen"
+#: opeka.admin.inc:69
+msgid "\"Enter site\" button text"
+msgstr "Tekst på “Godkend betingelser”-knappen"
 
-#: opeka.admin.inc:145
-msgid "Text on the enter site button"
-msgstr "Den tekst, som vises på godkendelsesknappen"
+#: opeka.admin.inc:70
+msgid "Text on the \"Enter site\" button"
+msgstr "Tekst på “Godkend betingelser”-knappen"
 
-#: opeka.admin.inc:147
+#: opeka.admin.inc:72
 msgid "Yes, I am from X municipality"
 msgstr "Ja, jeg er fra X kommune"
 
-#: opeka.admin.inc:153
-msgid "Leave site link text"
-msgstr "Tekst på “Forlad site” linket"
+#: opeka.admin.inc:78
+msgid "\"Leave site\" link text"
+msgstr "“Forlad sitet”-link tekst"
 
-#: opeka.admin.inc:154
-msgid "Text on the leave site link"
-msgstr "Teksten på forlad site-linket"
+#: opeka.admin.inc:79
+msgid "Text on the \"Leave site\" link"
+msgstr "Tekst på “Forlad sitet”-linket"
 
-#: opeka.admin.inc:156
+#: opeka.admin.inc:81
 msgid "I am from another municipality, what do I do?"
 msgstr "Jeg er fra en anden kommune, hvad gør jeg?"
 
-#: opeka.admin.inc:162
+#: opeka.admin.inc:87
+msgid "Opeka sign in related settings"
+msgstr "Indstillinger relateret til Opeka-logind processen"
+
+#: opeka.admin.inc:95
 msgid "Enter minimum age for clients"
 msgstr "Angiv minimumsalder for klienter"
 
-#: opeka.admin.inc:163
+#: opeka.admin.inc:96
 msgid "This is the minimum age that clients are presented with on the login form."
 msgstr "Dette er minimumsalderen, som klienter præsenteres for på login-formularen."
 
-#: opeka.admin.inc:170
+#: opeka.admin.inc:104
 msgid "Enter maximum age for clients"
 msgstr "Angiv maksimum-alder for klienter"
 
-#: opeka.admin.inc:171
+#: opeka.admin.inc:105
 msgid "This is the maximum age that clients are presented with on the login form."
 msgstr "Dette er maksimumssalderen, som klienter præsenteres for på login-formularen."
+
+#: opeka.admin.inc:113
+msgid "Welcome message"
+msgstr "Velkomstbesked"
+
+#: opeka.admin.inc:115
+msgid "Text shown before user logs into the chat."
+msgstr "Tekst der vises før brugeren logger på chatten."
+
+#: opeka.admin.inc:130
+msgid "Subtext for the header widget button"
+msgstr "Undertekst til header widget-knappen"
+
+#: opeka.admin.inc:131
+msgid "Text below the header widget button"
+msgstr "Tekst under header widget-knappen"
+
+#: opeka.admin.inc:133
+msgid "Chats are for young people aged 9 to 23 years."
+msgstr "Chatten er for unge mellem 9 og 23 år."
+
+#: opeka.admin.inc:139
+msgid "Text for the popup widget"
+msgstr "Tekst til popup widget"
+
+#: opeka.admin.inc:140
+msgid "Text on the popup widget"
+msgstr "Tekst på popup widget"
+
+#: opeka.admin.inc:142
+msgid "Chat anonymously with a counselor"
+msgstr "Chat anonymt med en rådgiver"
+
+#: opeka.admin.inc:148;149
+msgid "Text for the link"
+msgstr "Tekst til linket"
+
+#: opeka.admin.inc:157;158
+msgid "URL for the link"
+msgstr "URL til linket"
+
+#: opeka.admin.inc:166
+msgid "Opeka registration url settings"
+msgstr "Indstillinger for Opeka registreringsformularer"
+
+#: opeka.admin.inc:174
+msgid "1-to-1 chat registration form"
+msgstr "1-to-1 chat registrations-formular"
+
+#: opeka.admin.inc:175
+msgid "URL to a registration form, where counselors can enter data after a 1-to-1 chat."
+msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet 1-til-1 chat."
+
+#: opeka.admin.inc:182
+msgid "Group chat registration form"
+msgstr "Gruppechat registreringsside"
+
+#: opeka.admin.inc:183
+msgid "URL to a registration form, where counselors can enter data after a group chat."
+msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet gruppe-chat."
 
 #: opeka.statistics.inc:10 js/opeka.views.js:0
 msgid "Date"
@@ -364,19 +388,19 @@ msgstr "Se chat historik"
 msgid "Grants a user access to view opeka chat messages sent before user logged in."
 msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt før brugeren loggede på."
 
-#: opeka.module:178
+#: opeka.module:180
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:281
+#: opeka.module:283
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:299
+#: opeka.module:301
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:313;107
+#: opeka.module:315;107
 msgid "Header widget"
 msgstr "Header widget"
 
@@ -462,7 +486,7 @@ msgstr "Nulstil opeka screening tilladelser"
 
 #: opeka.install:164
 msgid "Creating table opeka_stats."
-msgstr "Opretter opeka_stats tabellen"
+msgstr "Opretter opeka_stats tabellen."
 
 #: opeka.install:168
 msgid "Moving existing data from table opeka_screening_submissions."
@@ -561,12 +585,12 @@ msgid "@user have been unmuted."
 msgstr "@user har fået tildelt sin ret til at skrive."
 
 #: js/opeka.common.js:0
-msgid "Sorry, you did not enter the correct code."
-msgstr "Beklager, men du har ikke angivet den korrekte kode."
+msgid "Sorry, something went wrong in the authentication process. Please contact support."
+msgstr "Beklager, noget gik galt i log-ind processen. Kontakt venligt support."
 
 #: js/opeka.common.js:0
-msgid "Wrong code."
-msgstr "Forkert kode."
+msgid "Access denied."
+msgstr "Adgang nægtet."
 
 #: js/opeka.common.js:0
 msgid "To access the chat you must be logged in to the website. Please log in and try again."
@@ -586,7 +610,7 @@ msgstr "Logget af"
 
 #: js/opeka.views.js:0
 msgid "Loading chat…"
-msgstr "Chatten indlæses..."
+msgstr "Chatten indlæses…"
 
 #: js/opeka.views.js:0
 msgid "Chat room is full, you are currently in queue as number: @number. You can stay and wait until you can enter or leave the queue."
@@ -618,7 +642,7 @@ msgstr "Forlad køen"
 
 #: js/opeka.views.js:0
 msgid "Type message here…"
-msgstr "Skriv din besked her..."
+msgstr "Skriv din besked her…"
 
 #: js/opeka.views.js:0
 msgid "When you are muted, you are not allowed to send any messages until the counselor decides to unmute you. You can see all the other messages and receive whispers."
@@ -798,7 +822,7 @@ msgstr "Slet besked"
 
 #: js/opeka.views.js:0
 msgid "New size:"
-msgstr "Ny størrelse"
+msgstr "Ny størrelse:"
 
 #: js/opeka.views.js:0
 msgid "Ok"
@@ -1139,14 +1163,14 @@ msgstr "Ønsker du at forlade denne side?"
 #: js/opeka.views.js:0
 msgid "1 guest"
 msgid_plural "@count guests"
-msgstr[0] "1 bruger"
-msgstr[1] "@count brugere"
+msgstr[0] ""
+msgstr[1] ""
 
 #: js/opeka.views.js:0
 msgid "1 counselor"
 msgid_plural "@count counselors"
-msgstr[0] "1 rådgiver"
-msgstr[1] "@count rådgivere"
+msgstr[0] ""
+msgstr[1] ""
 
 #: modules/features/opeka_features_permissions/opeka_features_permissions.info:0
 msgid "Opeka Features - permissions"

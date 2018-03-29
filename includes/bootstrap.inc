@@ -8,7 +8,7 @@
 /**
  * The current system version.
  */
-define('VERSION', '7.55');
+define('VERSION', '7.58');
 
 /**
  * Core API compatibility.
@@ -1047,6 +1047,7 @@ function _drupal_get_filename_perform_file_scan($type, $name) {
   else {
     $extension = $type;
   }
+
   // Check if we had already scanned this directory/extension combination.
   if (!isset($dirs[$dir][$extension])) {
     // Log that we have now scanned this directory/extension combination
@@ -2631,6 +2632,10 @@ function _drupal_bootstrap_configuration() {
   timer_start('page');
   // Initialize the configuration, including variables from settings.php.
   drupal_settings_initialize();
+
+  // Sanitize unsafe keys from the request.
+  require_once DRUPAL_ROOT . '/includes/request-sanitizer.inc';
+  DrupalRequestSanitizer::sanitize();
 }
 
 /**

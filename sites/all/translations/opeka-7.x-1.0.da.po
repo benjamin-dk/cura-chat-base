@@ -1588,7 +1588,7 @@ msgstr "Gruppechatten"
 
 #: widgets/js/chatstatus.js:0
 msgid "The chat is open"
-msgstr "Chatten er åben"
+msgstr "START CHAT"
 
 #: widgets/js/chatstatus.js:0
 msgid "The chat is occupied"

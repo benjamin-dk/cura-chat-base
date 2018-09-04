@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-06-10 22:22+0200\n"
-"PO-Revision-Date: 2018-06-10 23:02+0200\n"
+"POT-Creation-Date: 2018-09-04 11:13+0200\n"
+"PO-Revision-Date: 2018-09-04 11:16+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgstr "Her kan du ændre på synligheden af brugerlisten i 1-1 chatten. Afmærk
 
 #: opeka.admin.advanced.inc:43
 msgid "Pair chat room list entry"
-msgstr ""
+msgstr "Vis 1-1 chat rum på rum-oversigten"
 
 #: opeka.admin.advanced.inc:44
 msgid "Check this if the user should be sent to the room list instead of joining the first available room."
@@ -132,7 +132,7 @@ msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 msgid "Check this box if the feedback form should be opened automatically for clients."
 msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.advanced.inc:115 opeka.admin.inc:131
+#: opeka.admin.advanced.inc:115 opeka.admin.inc:139
 msgid "Opeka widget settings"
 msgstr "Opeka widget indstillinger"
 
@@ -264,55 +264,63 @@ msgstr "Fodnote under login-formular"
 msgid "Footnote below the signin form."
 msgstr "Fodnote under login-formular"
 
-#: opeka.admin.inc:139
+#: opeka.admin.inc:131
+msgid "Show the non-binary gender option on the signin form."
+msgstr "Vis “ikke binær” muligheden for køn på login-siden."
+
+#: opeka.admin.inc:132
+msgid "Show the non-binary gender option for regular users when logging in."
+msgstr "Vis “ikke-binær” muligheden for valg af køn ved login."
+
+#: opeka.admin.inc:147
 msgid "Subtext for the header widget button"
 msgstr "Undertekst til header widget-knappen"
 
-#: opeka.admin.inc:140
+#: opeka.admin.inc:148
 msgid "Text below the header widget button"
 msgstr "Tekst under header widget-knappen"
 
-#: opeka.admin.inc:142
+#: opeka.admin.inc:150
 msgid "Chats are for young people aged 9 to 23 years."
 msgstr "Chatten er for unge mellem 9 og 23 år."
 
-#: opeka.admin.inc:148
+#: opeka.admin.inc:156
 msgid "Text for the popup widget"
 msgstr "Tekst til popup widget"
 
-#: opeka.admin.inc:149
+#: opeka.admin.inc:157
 msgid "Text on the popup widget"
 msgstr "Tekst på popup widget"
 
-#: opeka.admin.inc:151
+#: opeka.admin.inc:159
 msgid "Chat anonymously with a counselor"
 msgstr "Chat anonymt med en rådgiver"
 
-#: opeka.admin.inc:157;158
+#: opeka.admin.inc:165;166
 msgid "Text for the link"
 msgstr "Tekst til linket"
 
-#: opeka.admin.inc:166;167
+#: opeka.admin.inc:174;175
 msgid "URL for the link"
 msgstr "URL til linket"
 
-#: opeka.admin.inc:175
+#: opeka.admin.inc:183
 msgid "Opeka registration url settings"
 msgstr "Indstillinger for Opeka registreringsformularer"
 
-#: opeka.admin.inc:183
+#: opeka.admin.inc:191
 msgid "1-to-1 chat registration form"
 msgstr "1-to-1 chat registrations-formular"
 
-#: opeka.admin.inc:184
+#: opeka.admin.inc:192
 msgid "URL to a registration form, where counselors can enter data after a 1-to-1 chat."
 msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet 1-til-1 chat."
 
-#: opeka.admin.inc:191
+#: opeka.admin.inc:199
 msgid "Group chat registration form"
 msgstr "Gruppechat registreringsside"
 
-#: opeka.admin.inc:192
+#: opeka.admin.inc:200
 msgid "URL to a registration form, where counselors can enter data after a group chat."
 msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet gruppe-chat."
 
@@ -440,15 +448,15 @@ msgstr "Giver en bruger adgang til at se opeka chat beskeder som er blevet sendt
 msgid "Opeka web service URL missing."
 msgstr "Opeka web service URL mangler."
 
-#: opeka.module:289
+#: opeka.module:288
 msgid "Header Widget for the chat"
 msgstr "Header widget til chat integration"
 
-#: opeka.module:307
+#: opeka.module:306
 msgid "No schedule info available."
 msgstr "Der er ingen information om åbningstider tilgængelig."
 
-#: opeka.module:321;107
+#: opeka.module:320;107
 msgid "Header widget"
 msgstr "Header widget"
 
@@ -743,6 +751,14 @@ msgstr "@writers skriver…"
 #: js/opeka.views.js:0
 msgid "@writers people are typing..."
 msgstr "@writers brugere skriver…"
+
+#: js/opeka.views.js:0
+msgid "Out of characters!"
+msgstr "Ikke flere tegn!"
+
+#: js/opeka.views.js:0
+msgid "@charsLeft characters left."
+msgstr "@charsLeft tegn tilbage."
 
 #: js/opeka.views.js:0
 msgid "Pause chat"
@@ -1222,7 +1238,7 @@ msgstr "Henter..."
 
 #: js/opeka.views.js:0
 msgid "Starting chat…"
-msgstr "Chatten starter op..."
+msgstr "Chatten starter op…"
 
 #: js/opeka.views.js:0
 msgid "You must answer the question before you can enter the chat."
@@ -1249,8 +1265,8 @@ msgstr "Log på"
 #: js/opeka.views.js:0
 msgid "1 guest"
 msgid_plural "@count guests"
-msgstr[0] "1 bruger"
-msgstr[1] "@count brugere"
+msgstr[0] "1 gæst"
+msgstr[1] "@count gæster"
 
 #: js/opeka.views.js:0
 msgid "1 counselor"
@@ -1426,8 +1442,7 @@ msgstr "Der er ikke blevet oprettet nogle invitationer endnu."
 msgid "Invitation settings"
 msgstr "Invitationsindstillinger"
 
-#: modules/opeka_invite/opeka_invite.module:37
-#: modules/opeka_invite/opeka_invite.info:0
+#: modules/opeka_invite/opeka_invite.module:37 modules/opeka_invite/opeka_invite.info:0
 msgid "Opeka Invitations"
 msgstr "Opeka Invitationer"
 
@@ -1447,8 +1462,7 @@ msgstr "Fra"
 msgid "To"
 msgstr "Til"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:58
-#: modules/opeka_screening/opeka_screening.admin.inc:65
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:58 modules/opeka_screening/opeka_screening.admin.inc:65
 msgid "Remove"
 msgstr "Fjern"
 
@@ -1464,8 +1478,7 @@ msgstr "Tekst i chat-skiltet"
 msgid "The message for the upcoming chat sessions"
 msgstr "Besked ang. de kommende chat-sessioner"
 
-#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:108
-#: modules/opeka_opening_hours/opeka_opening_hours.module:71
+#: modules/opeka_opening_hours/opeka_opening_hours.admin.inc:108 modules/opeka_opening_hours/opeka_opening_hours.module:71
 msgid "You can chat with the counselors according to the following schedule."
 msgstr "Du kan chatte med rådgiverne på de følgende tidspunkter."
 
@@ -1537,8 +1550,7 @@ msgstr "Screening spørgsmål"
 msgid "The question you want to pose to the users."
 msgstr "Spørgsmålet, du vil stille dine brugere."
 
-#: modules/opeka_screening/opeka_screening.admin.inc:37
-#: modules/opeka_screening/opeka_screening.module:88
+#: modules/opeka_screening/opeka_screening.admin.inc:37 modules/opeka_screening/opeka_screening.module:88
 msgid "Question..."
 msgstr "Spørgsmål…"
 
@@ -1588,7 +1600,7 @@ msgstr "Gruppechatten"
 
 #: widgets/js/chatstatus.js:0
 msgid "The chat is open"
-msgstr "START CHAT"
+msgstr "Chatten er åben"
 
 #: widgets/js/chatstatus.js:0
 msgid "The chat is occupied"

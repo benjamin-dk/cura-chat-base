@@ -25,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-09-04 11:13+0200\n"
-"PO-Revision-Date: 2018-09-04 11:16+0200\n"
+"POT-Creation-Date: 2018-09-09 23:00+0200\n"
+"PO-Revision-Date: 2018-09-09 23:14+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -270,7 +270,7 @@ msgstr "Vis “ikke binær” muligheden for køn på login-siden."
 
 #: opeka.admin.inc:132
 msgid "Show the non-binary gender option for regular users when logging in."
-msgstr "Vis “ikke-binær” muligheden for valg af køn ved login."
+msgstr "Vis muligheden “ikke-binær” for valg af køn på login-formularen."
 
 #: opeka.admin.inc:147
 msgid "Subtext for the header widget button"
@@ -873,6 +873,14 @@ msgid "The IP address you are currently visiting the site from is banned from th
 msgstr "Den IP-adresse du bruger til at tilgå chatten er banlyst fra chat-systemet. Det vil ikke være muligt for dig at deltage i chatten."
 
 #: js/opeka.views.js:0
+msgid "You are outside geographical limits."
+msgstr "Du er udenfor det geografiske område."
+
+#: js/opeka.views.js:0
+msgid "The IP address you are currently visiting the site from is not within the geographical zone supported by the system. You will not be able to participate in the chat."
+msgstr "Den IP-adresse du benytter ligger ikke i den geografiske zone, som systemet understøtter. Du kan desværre ikke deltage i chatten."
+
+#: js/opeka.views.js:0
 msgid "Reconnecting"
 msgstr "Forbinder"
 
@@ -1238,7 +1246,7 @@ msgstr "Henter..."
 
 #: js/opeka.views.js:0
 msgid "Starting chat…"
-msgstr "Chatten starter op…"
+msgstr "Chatten starter op..."
 
 #: js/opeka.views.js:0
 msgid "You must answer the question before you can enter the chat."

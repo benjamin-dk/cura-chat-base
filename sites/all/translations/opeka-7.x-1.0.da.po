@@ -4,14 +4,16 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  opeka.admin.advanced.inc: n/a
-#  opeka.admin.inc: n/a
 #  opeka.module: n/a
+#  opeka.admin.inc: n/a
 #  opeka.statistics.inc: n/a
 #  js/opeka.views.js: n/a
 #  modules/opeka_invite/opeka_invite.module: n/a
 #  opeka.install: n/a
 #  opeka.info: n/a
 #  js/opeka.common.js: n/a
+#  js/opeka.models.js: n/a
+#  modules/opeka_report_user/opeka_report_user.module: n/a
 #  widgets/js/chatstatus.js: n/a
 #  modules/features/opeka_features_permissions/opeka_features_permissions.info: n/a
 #  modules/opeka_invite/opeka_invite.info: n/a
@@ -19,14 +21,15 @@
 #  modules/opeka_screening/opeka_screening.admin.inc: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.module: n/a
 #  modules/opeka_opening_hours/opeka_opening_hours.info: n/a
+#  modules/opeka_report_user/opeka_report_user.info: n/a
 #  modules/opeka_screening/opeka_screening.module: n/a
 #  modules/opeka_screening/opeka_screening.info: n/a
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-09-09 23:00+0200\n"
-"PO-Revision-Date: 2018-09-09 23:14+0200\n"
+"POT-Creation-Date: 2018-11-13 20:27+0100\n"
+"PO-Revision-Date: 2018-11-13 22:22+0100\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +37,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "Language: da\n"
-"X-Generator: Poedit 2.0\n"
+"X-Generator: Poedit 2.2\n"
 
 #: opeka.admin.advanced.inc:11
 msgid "Opeka server URL"
@@ -132,7 +135,7 @@ msgstr "Automatisk viderestilling til spørgeskema i eksternt vindue?"
 msgid "Check this box if the feedback form should be opened automatically for clients."
 msgstr "Afmærk denne checkbox hvis spørgeskemaet skal åbnes automatisk for brugerne."
 
-#: opeka.admin.advanced.inc:115 opeka.admin.inc:139
+#: opeka.admin.advanced.inc:115
 msgid "Opeka widget settings"
 msgstr "Opeka widget indstillinger"
 
@@ -198,7 +201,7 @@ msgstr "“Godkend betingelser” besked"
 
 #: opeka.admin.inc:61
 msgid "A disclaimer message above the \"Enter site\" button."
-msgstr "En informationstekst over “Godkend betingelser”-knappen"
+msgstr "En informationstekst over “Godkend betingelser”-knappen."
 
 #: opeka.admin.inc:63
 msgid "Chat 100% anonymously with counselors from X municipality. NOTE: You can only chat if you are living in this municipality"
@@ -229,8 +232,8 @@ msgid "I am from another municipality, what do I do?"
 msgstr "Jeg er fra en anden kommune, hvad gør jeg?"
 
 #: opeka.admin.inc:87
-msgid "Opeka sign in related settings"
-msgstr "Indstillinger relateret til Opeka login processen"
+msgid "Sign in related settings"
+msgstr "Login-Indstillinger"
 
 #: opeka.admin.inc:95
 msgid "Enter minimum age for clients"
@@ -254,7 +257,7 @@ msgstr "Velkomstbesked"
 
 #: opeka.admin.inc:115
 msgid "Text shown before user logs into the chat."
-msgstr "Tekst der vises før brugeren logger på chatten"
+msgstr "Tekst der vises før brugeren logger på chatten."
 
 #: opeka.admin.inc:122
 msgid "Signin footnote"
@@ -262,7 +265,7 @@ msgstr "Fodnote under login-formular"
 
 #: opeka.admin.inc:124
 msgid "Footnote below the signin form."
-msgstr "Fodnote under login-formular"
+msgstr "Fodnote under logind-formular"
 
 #: opeka.admin.inc:131
 msgid "Show the non-binary gender option on the signin form."
@@ -271,6 +274,10 @@ msgstr "Vis “ikke binær” muligheden for køn på login-siden."
 #: opeka.admin.inc:132
 msgid "Show the non-binary gender option for regular users when logging in."
 msgstr "Vis muligheden “ikke-binær” for valg af køn på login-formularen."
+
+#: opeka.admin.inc:139
+msgid "Widget settings"
+msgstr "Widget indstillinger"
 
 #: opeka.admin.inc:147
 msgid "Subtext for the header widget button"
@@ -305,8 +312,8 @@ msgid "URL for the link"
 msgstr "URL til linket"
 
 #: opeka.admin.inc:183
-msgid "Opeka registration url settings"
-msgstr "Indstillinger for Opeka registreringsformularer"
+msgid "Registration url settings"
+msgstr "Indstillinger for registreringsskema URL"
 
 #: opeka.admin.inc:191
 msgid "1-to-1 chat registration form"
@@ -324,67 +331,67 @@ msgstr "Gruppechat registreringsside"
 msgid "URL to a registration form, where counselors can enter data after a group chat."
 msgstr "URL til en registreringsside hvor rådgivere kan registrere data efter en afsluttet gruppe-chat."
 
-#: opeka.statistics.inc:10 js/opeka.views.js:0
+#: opeka.statistics.inc:9 js/opeka.views.js:0
 msgid "Date"
 msgstr "Dato"
 
-#: opeka.statistics.inc:11
+#: opeka.statistics.inc:10
 msgid "Chat duration (min)"
 msgstr "Chat-varighed (min)"
 
-#: opeka.statistics.inc:12 js/opeka.views.js:0
+#: opeka.statistics.inc:11 js/opeka.views.js:0
 msgid "Age"
 msgstr "Alder"
 
-#: opeka.statistics.inc:13 js/opeka.views.js:0
+#: opeka.statistics.inc:12 js/opeka.views.js:0
 msgid "Gender"
 msgstr "Køn"
 
-#: opeka.statistics.inc:14
+#: opeka.statistics.inc:13
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: opeka.statistics.inc:15
+#: opeka.statistics.inc:14
 msgid "Answer"
 msgstr "Svar"
 
-#: opeka.statistics.inc:40
+#: opeka.statistics.inc:39
 msgid "-"
 msgstr "-"
 
-#: opeka.statistics.inc:41
+#: opeka.statistics.inc:40
 msgid "age not set"
 msgstr "Alder ikke angivet"
 
-#: opeka.statistics.inc:55
+#: opeka.statistics.inc:54
 msgid "No screening results yet..."
 msgstr "Ingen screening-resultater  endnu."
 
-#: opeka.statistics.inc:63;69
+#: opeka.statistics.inc:62;68
 msgid "None"
 msgstr "Ingen"
 
-#: opeka.statistics.inc:71
+#: opeka.statistics.inc:70
 msgid "Total number of chat sessions: "
 msgstr "Samlet antal chat sessioner: "
 
-#: opeka.statistics.inc:72
+#: opeka.statistics.inc:71
 msgid "Total number of chat sessions last 4 weeks: "
 msgstr "Samlet antal chat sessioner de seneste 4 uger: "
 
-#: opeka.statistics.inc:79
+#: opeka.statistics.inc:78
 msgid "female"
 msgstr "pige"
 
-#: opeka.statistics.inc:82
+#: opeka.statistics.inc:81
 msgid "male"
 msgstr "dreng"
 
-#: opeka.statistics.inc:85 js/opeka.views.js:0;0
+#: opeka.statistics.inc:84 js/opeka.views.js:0;0
 msgid "non-binary"
 msgstr "Non-binær"
 
-#: opeka.statistics.inc:88
+#: opeka.statistics.inc:87
 msgid "gender not set"
 msgstr "køn ikke angivet"
 
@@ -524,31 +531,31 @@ msgstr "Folde-ud widget kode til brug på eksterne sites."
 msgid "Mixed widget code for third party sites."
 msgstr "Mixed widget kode til tredjeparts-sites."
 
-#: opeka.install:120;141;179
+#: opeka.install:134;155;193
 msgid "Enabling modules..."
 msgstr "Aktiverer moduler…"
 
-#: opeka.install:129
+#: opeka.install:143
 msgid "Reverting the opeka permissions"
 msgstr "Nulstil opeka tilladelserne"
 
-#: opeka.install:133;154;192
+#: opeka.install:147;168;206
 msgid "Some modules needed for feature reverting not enabled. Not reverting."
 msgstr "Der mangler moduler for at nulstillingen kan udføres. Nulstilling ikke udført."
 
-#: opeka.install:150;188
+#: opeka.install:164;202
 msgid "Reverting the opeka screening permissions"
 msgstr "Nulstil opeka screening tilladelser"
 
-#: opeka.install:164
+#: opeka.install:178
 msgid "Creating table opeka_stats."
 msgstr "Opretter opeka_stats tabellen"
 
-#: opeka.install:168
+#: opeka.install:182
 msgid "Moving existing data from table opeka_screening_submissions."
 msgstr "Flytter eksistererende data fra opeka_screening_submissions tabellen."
 
-#: opeka.install:175
+#: opeka.install:189
 msgid "Table opeka_stats already exists."
 msgstr "Tabellen opeka_stats eksisterer allerede."
 
@@ -573,10 +580,6 @@ msgid "Chat is cancelled"
 msgstr "Chatten er aflyst"
 
 #: js/opeka.common.js:0
-msgid "It seems your counselor is not available yet, try again in a few minutes"
-msgstr "Det ser ud til at din rådgiver ikke er klar endnu, prøv igen om et par minutter"
-
-#: js/opeka.common.js:0
 msgid "It seems your counselor is not available yet, try again in a few minutes."
 msgstr "Det ser ud til at din rådgiver ikke er klar endnu, prøv igen om et par minutter."
 
@@ -588,7 +591,7 @@ msgstr "Chatten er ikke tilgængelig"
 msgid "An error happened and you have lost the queue status, you can reload and join the queue again."
 msgstr "Hov! Der er sket en fejl, og du har mistet din placering i køen. Du kan genindlæse siden og stille dig i kø igen."
 
-#: js/opeka.common.js:0;0
+#: js/opeka.common.js:0;0 js/opeka.models.js:0
 msgid "Error"
 msgstr "Fejl"
 
@@ -649,12 +652,24 @@ msgid "Access denied."
 msgstr "Adgang nægtet."
 
 #: js/opeka.common.js:0
+msgid "Sorry, you can't log in. The chat is closed."
+msgstr "Beklager, du kan ikke logge ind. Chatten er lukket."
+
+#: js/opeka.common.js:0
+msgid "Chat closed"
+msgstr "Chatten er lukket"
+
+#: js/opeka.common.js:0
 msgid "To access the chat you must be logged in to the website. Please log in and try again."
 msgstr "Du skal være logget ind for at kunne tilgå chatten. Log venligst ind og prøv igen."
 
 #: js/opeka.common.js:0
 msgid "Login required"
 msgstr "Login påkrævet"
+
+#: js/opeka.common.js:0
+msgid "@messageText"
+msgstr "@messageText"
 
 #: js/opeka.common.js:0
 msgid "Sorry, you were offline for too long. Please reload the page to reconnect."
@@ -684,7 +699,7 @@ msgstr "Chatten indlæses..."
 msgid "Chat room is full, you are currently in queue as number: @number. You can stay and wait until you can enter or leave the queue."
 msgstr "Chatten er optaget, du er lige nu i kø som nummer: @number. Du kan blive og vente indtil du kan komme igennem eller forlade køen."
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 modules/opeka_report_user/opeka_report_user.module:342
 msgid "Delete"
 msgstr "Slet"
 
@@ -724,7 +739,7 @@ msgstr "Rummet er sat på pause"
 msgid "You are muted"
 msgstr "Du har fået frataget retten til at skrive i chatten"
 
-#: js/opeka.views.js:0
+#: js/opeka.views.js:0 modules/opeka_report_user/opeka_report_user.module:335;378
 msgid "Send"
 msgstr "Send"
 
@@ -807,6 +822,14 @@ msgstr "\"Ban\" brugeren"
 #: js/opeka.views.js:0
 msgid "Mute user"
 msgstr "\"Mute\" bruger"
+
+#: js/opeka.views.js:0
+msgid "Report user"
+msgstr "Indberet bruger"
+
+#: js/opeka.views.js:0
+msgid "User has been reported!"
+msgstr "Bruger er allerede indberettet!"
 
 #: js/opeka.views.js:0
 msgid "Screening info"
@@ -996,7 +1019,7 @@ msgstr "Opret nyt privat rum (øverum)"
 msgid "Create new room"
 msgstr "Opret nyt chatrum"
 
-#: js/opeka.views.js:0;0;0
+#: js/opeka.views.js:0;0;0;0
 msgid "Discard changes"
 msgstr "Fortryd ændringer"
 
@@ -1031,6 +1054,34 @@ msgstr "Rådgivernavn"
 #: js/opeka.views.js:0;0
 msgid "Create new invitation"
 msgstr "Opret ny invitation"
+
+#: js/opeka.views.js:0
+msgid "Your full name"
+msgstr "Dit fulde navn"
+
+#: js/opeka.views.js:0
+msgid "Reason for making the report"
+msgstr "Grunden til at du laver denne indberetning"
+
+#: js/opeka.views.js:0
+msgid "Are you sure you want to report this user to the authorities and log data?"
+msgstr "Er du sikker på, at du vil indberette denne bruger til myndighederne og logge data?"
+
+#: js/opeka.views.js:0
+msgid "Report user: @clientAlias"
+msgstr "Indberet bruger: @clientAlias"
+
+#: js/opeka.views.js:0
+msgid "Create new user report"
+msgstr "Opret ny bruger-indberetning"
+
+#: js/opeka.views.js:0
+msgid "@alias reported."
+msgstr "@alias indberettet."
+
+#: js/opeka.views.js:0
+msgid "The report will be reviewed by the Report Admin shortly."
+msgstr "Indberetningen vil blive gennemset af underretnings-administratoren snarest."
 
 #: js/opeka.views.js:0
 msgid "Name"
@@ -1200,7 +1251,7 @@ msgstr "Kunne ikke hviske til brugeren. Måske er brugeren logget ud."
 msgid "Sorry."
 msgstr "Beklager."
 
-#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:97;416
+#: js/opeka.views.js:0 modules/opeka_invite/opeka_invite.module:97;416 modules/opeka_report_user/opeka_report_user.module:140;369
 msgid "Counselor"
 msgstr "Rådgiver"
 
@@ -1274,7 +1325,7 @@ msgstr "Log på"
 msgid "1 guest"
 msgid_plural "@count guests"
 msgstr[0] "1 gæst"
-msgstr[1] "@count gæster"
+msgstr[1] "@count guests"
 
 #: js/opeka.views.js:0
 msgid "1 counselor"
@@ -1302,7 +1353,7 @@ msgstr "Administrér invitationslinks"
 msgid "Allow managing invitations for Opeka chat."
 msgstr "Muliggør administration af invitationer til Opeka chat."
 
-#: modules/opeka_invite/opeka_invite.module:77
+#: modules/opeka_invite/opeka_invite.module:77 modules/opeka_report_user/opeka_report_user.module:98
 msgid "This field cannot be empty"
 msgstr "Dette felt skal udfyldes"
 
@@ -1447,8 +1498,8 @@ msgid "No invitations have been created yet."
 msgstr "Der er ikke blevet oprettet nogle invitationer endnu."
 
 #: modules/opeka_invite/opeka_invite.module:13
-msgid "Invitation settings"
-msgstr "Invitationsindstillinger"
+msgid "Invitations"
+msgstr "Invitationer"
 
 #: modules/opeka_invite/opeka_invite.module:37 modules/opeka_invite/opeka_invite.info:0
 msgid "Opeka Invitations"
@@ -1541,6 +1592,246 @@ msgstr "Opeka åbningstider"
 #: modules/opeka_opening_hours/opeka_opening_hours.info:0
 msgid "An Opeka submodule, allowing to manage the opening hours and related info."
 msgstr "Et Opeka sub-modul, der giver mulighed for at administerer åbningstider og relateret information."
+
+#: modules/opeka_report_user/opeka_report_user.module:66
+msgid "Administer report user links"
+msgstr "Administrér indberetnings-links"
+
+#: modules/opeka_report_user/opeka_report_user.module:67
+msgid "Allow managing user reports for Opeka chat."
+msgstr "Tillad at administrere bruger-indberetninger for Opeka-chatten."
+
+#: modules/opeka_report_user/opeka_report_user.module:89
+msgid "An error ocurred. The client id could not be found. Please contact support"
+msgstr "Der er sket en fejl. Klient-id’et kunne ikke findes. Kontakt venligst support"
+
+#: modules/opeka_report_user/opeka_report_user.module:126
+msgid "An error ocurred. The client id could not be found in the database. Please contact support"
+msgstr "Der er sket en fejl. Klient-id’et kunne ikke findes i databasen. Kontakt venligst support"
+
+#: modules/opeka_report_user/opeka_report_user.module:168
+msgid "An error ocurred. Report was not saved to database."
+msgstr "Der er sket en fejl. Indberetningen blev ikke gemt i databasen."
+
+#: modules/opeka_report_user/opeka_report_user.module:251
+msgid "Report from @counselor_name"
+msgstr "Indberetning fra @counselor_name"
+
+#: modules/opeka_report_user/opeka_report_user.module:254
+msgid ""
+"Report made by: @counselor_name (contact email: @counselor_email) at @sitename\n"
+"\n"
+"Date of report: @date. \n"
+"Message from counselor: @message\n"
+"Collected log data for reported client:\n"
+"Login time: @login_dates.\n"
+"Alias: @client_alias.\n"
+"IP address: @ip_address.\n"
+"Remote port: @remote_port.\n"
+"User Agent: @user_agent."
+msgstr ""
+"Indberetning foretaget af: @counselor_name (kontakt email: @counselor_email) fra @sitename\n"
+"\n"
+"Indberetningsdato: @date. \n"
+"Besked fra rådgiver: @message\n"
+"Indsamlet data fra indberettet klient:\n"
+"Log ind tidspunkt: @login_dates.\n"
+"Alias: @client_alias.\n"
+"IP adresse: @ip_address.\n"
+"Remote port: @remote_port.\n"
+"User Agent: @user_agent."
+
+#: modules/opeka_report_user/opeka_report_user.module:278
+msgid "A report has just been made from @sitename"
+msgstr "Der er lige blevet lavet en indberetning fra @sitename"
+
+#: modules/opeka_report_user/opeka_report_user.module:281
+msgid ""
+"Report made by: @counselor_name (contact email: @counselor_email). \n"
+"Date of report: @date. \n"
+"Message from counselor: @message\n"
+"\n"
+"You can review and send the report via @report_page_url"
+msgstr ""
+"Indberetning lavet af @counselor_name (kontakt email: @counselor_email). \n"
+"Indberetningsdato @date. \n"
+"Besked fra rådgiver: @message\n"
+"\n"
+"Du kan gennemse og sende indberetningen via @report_page_url"
+
+#: modules/opeka_report_user/opeka_report_user.module:294
+msgid "You have just made a report from @sitename"
+msgstr "Du har lige lavet en indberetning fra @sitename"
+
+#: modules/opeka_report_user/opeka_report_user.module:297
+msgid ""
+"Report made by: @counselor_name (contact email: @counselor_email).\n"
+"Date of report: @date. \n"
+"Message from counselor: @message"
+msgstr ""
+"Indberetning lavet af: @counselor_name (kontakt email: @counselor_email).\n"
+"Indberetningsdato: @date. \n"
+"Besked fra rådgiver: @message"
+
+#: modules/opeka_report_user/opeka_report_user.module:319
+msgid ""
+"The report user admin or authority email have not been defined! \n"
+"    Please go to <a href=\"/admin/config/services/opeka/report-user\">the settings</a> and define it."
+msgstr ""
+"Email adressen for indberetnings-administratoren og/eller -myndigheden er ikke defineret! \n"
+"    Gå til <a href=“/admin/config/services/opeka/report-user”>indstillingerne</a> og angiv dem."
+
+#: modules/opeka_report_user/opeka_report_user.module:367
+msgid "Report ID"
+msgstr "Indberetnings-ID"
+
+#: modules/opeka_report_user/opeka_report_user.module:368
+msgid "Date and time of report"
+msgstr "Dato og tidspunkt for indberetning"
+
+#: modules/opeka_report_user/opeka_report_user.module:370
+msgid "Counselor email"
+msgstr "Rådgiver-email"
+
+#: modules/opeka_report_user/opeka_report_user.module:371
+msgid "Reported user alias"
+msgstr "Indberettet brugers alias"
+
+#: modules/opeka_report_user/opeka_report_user.module:372
+msgid "Reason for report"
+msgstr "Grunden til indberetningen"
+
+#: modules/opeka_report_user/opeka_report_user.module:373
+msgid "IP address"
+msgstr "IP-adresse"
+
+#: modules/opeka_report_user/opeka_report_user.module:374
+msgid "Remote port"
+msgstr "Remote port"
+
+#: modules/opeka_report_user/opeka_report_user.module:375
+msgid "User agent"
+msgstr "User agent"
+
+#: modules/opeka_report_user/opeka_report_user.module:376
+msgid "Login-timestamp for the reported user"
+msgstr "Log-ind tidsstempel for den indberettede bruger"
+
+#: modules/opeka_report_user/opeka_report_user.module:377
+msgid "Number of times this report has been sent"
+msgstr "Antal gange denne indberetning er blevet sendt"
+
+#: modules/opeka_report_user/opeka_report_user.module:379
+msgid "Delete "
+msgstr "Slet"
+
+#: modules/opeka_report_user/opeka_report_user.module:387
+msgid "There are no reports right now."
+msgstr "Der er ingen indberetninger endnu."
+
+#: modules/opeka_report_user/opeka_report_user.module:424
+msgid "The report was deleted"
+msgstr "Indberetningen blev slettet"
+
+#: modules/opeka_report_user/opeka_report_user.module:430
+msgid "The report id could not be found in the database. Report not deleted."
+msgstr "Indberetnings-ID kunne ikke findes i databasen. Indberetningen blev ikke slettet."
+
+#: modules/opeka_report_user/opeka_report_user.module:474
+msgid "The report was sent"
+msgstr "Indberetningen blev sendt"
+
+#: modules/opeka_report_user/opeka_report_user.module:485
+msgid "The report id could not be found in the database. Report not sent."
+msgstr "Indberetnings-ID’et kunne ikke findes i databasen. Indberetningen blev ikke sendt."
+
+#: modules/opeka_report_user/opeka_report_user.module:497
+msgid "Report user settings"
+msgstr "Indstillinger for brugerindberetning"
+
+#: modules/opeka_report_user/opeka_report_user.module:505
+msgid "Email address of the Report User admininstrator"
+msgstr "Brugerindberetnings-administratorens email-adresse"
+
+#: modules/opeka_report_user/opeka_report_user.module:506
+msgid "Email address of the administrator, that is responsible for reviewing and approving user reports."
+msgstr "Email-adressen på administratoren, som er ansvarlig for at gennemse og godkende indberetninger."
+
+#: modules/opeka_report_user/opeka_report_user.module:513
+msgid "Email address of the Report User authority"
+msgstr "Brugerindberetnings-myndighedens email-adresse"
+
+#: modules/opeka_report_user/opeka_report_user.module:514
+msgid "Email address of the authority that will recieve the report."
+msgstr "Email-adressen på den myndigheder, som skal modtage indberetningen."
+
+#: modules/opeka_report_user/opeka_report_user.module:531
+msgid "The Report User administrator email is not valid. Please provide a valid email address."
+msgstr "Brugerindberetnings-administratorens email er ikke gyldig. Angiv venligst en gyldig email-adresse."
+
+#: modules/opeka_report_user/opeka_report_user.module:534
+msgid "The Report User authority email is not valid. Please provide a valid email address."
+msgstr "Brugerindberetnings-myndighedens email er ikke gyldig. Angiv venligst en gyldig email adresse."
+
+#: modules/opeka_report_user/opeka_report_user.module:90;117;122;166;421;427;471;482
+msgid "opeka_report_user"
+msgstr "opeka_report_user"
+
+#: modules/opeka_report_user/opeka_report_user.module:90
+msgid "User report could not be processed: missing client id!"
+msgstr "Bruger-indberetningen kunne ikke behandles: manglende klient-id!"
+
+#: modules/opeka_report_user/opeka_report_user.module:117
+msgid "We found a match in opeka_stats for %client-id"
+msgstr ""
+
+#: modules/opeka_report_user/opeka_report_user.module:122
+msgid "No match in opeka_stats for %client-id"
+msgstr ""
+
+#: modules/opeka_report_user/opeka_report_user.module:166
+msgid "Report was not saved to database"
+msgstr "Indberetningen blev ikke gemt i databasen"
+
+#: modules/opeka_report_user/opeka_report_user.module:421
+msgid "User report with id %report-id was deleted"
+msgstr "Brugerindberetningen med id %report-id blev slettet"
+
+#: modules/opeka_report_user/opeka_report_user.module:427
+msgid "User report with id %report-id could not be deleted"
+msgstr "Brugerindberetningen med id %report-id kunne ikke slettes"
+
+#: modules/opeka_report_user/opeka_report_user.module:471
+msgid "User report with id %report-id was sent"
+msgstr "Brugerindberetningen med %report-id blev sendt"
+
+#: modules/opeka_report_user/opeka_report_user.module:482
+msgid "User report with id %report-id could not be sent"
+msgstr "Brugerindberetningen med id %report-id kunne ikke sendes"
+
+#: modules/opeka_report_user/opeka_report_user.module:13
+msgid "Report users"
+msgstr "Indberet brugere"
+
+#: modules/opeka_report_user/opeka_report_user.module:37
+msgid "User Reports"
+msgstr "Brugerindberetninger"
+
+#: modules/opeka_report_user/opeka_report_user.module:44
+msgid "Delete Report"
+msgstr "Slet indberetning"
+
+#: modules/opeka_report_user/opeka_report_user.module:51
+msgid "Send Report"
+msgstr "Send indberetning"
+
+#: modules/opeka_report_user/opeka_report_user.info:0
+msgid "Opeka Report User"
+msgstr "Opeka brugerindberetning"
+
+#: modules/opeka_report_user/opeka_report_user.info:0
+msgid "An Opeka submodule, allowing to report user IP, User agent etc. to a selected email-address."
+msgstr "Et Opeka undermodul, der gør det muligt at indberette bruger IP, User agent mv. til en email-adresse efter eget valg."
 
 #: modules/opeka_screening/opeka_screening.admin.inc:14
 msgid "Mark the question required."
